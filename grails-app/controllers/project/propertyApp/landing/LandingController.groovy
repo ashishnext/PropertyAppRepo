@@ -15,12 +15,12 @@ class LandingController {
 
     def home() {
 
-        if (flash.message) {
-            render(view: "home", model: [houseByLocation:flash.message.houseByLocation, officeByLocation:flash.message.officeByLocation])
-        }
-        else {
-            render(view: "home")
-        }
+//        if (flash.message) {
+//            render(view: "home", model: [houseByLocation:flash.message.houseByLocation, officeByLocation:flash.message.officeByLocation])
+//        }
+//        else {
+//            render(view: "home")
+//        }
     }
 
     def newHoseProject() {

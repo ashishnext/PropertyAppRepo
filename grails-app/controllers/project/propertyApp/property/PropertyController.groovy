@@ -64,14 +64,14 @@ class PropertyController {
             between("price", priceRange[0] as Long, priceRange[1] as Long)
 //            eq("propertyFor", params.propertyFor)
         }
-        flash.message = [houseByLocation: results, officeByLocation: results1]
-        redirect(controller: "landing", action: "home")
+
+        render(view: "/landing/home", model: [houseByLocation: results, officeByLocation: results1])
 
 //        render(view: "/landing/home", model: [houseByLocation:results, officeByLocation:results1])
     }
 
     def editHouse() {
-        House house = House.findById(params.houseId)
+        House house = House.findById(params.houseId as Long)
 
         render(view: "editHouse", model: [houseObj: house])
     }
@@ -102,12 +102,12 @@ class PropertyController {
     }
 
     def editOffice() {
-        Office office=Office.findById(params.officeId)
+        Office office=Office.findById(params.officeId as Long)
         render(view: "editOffice", model: [officeObj: office] )
     }
 
     def updateOffice(OfficeCO officeCO) {
-        Office office = Office.findById(params.officeId )
+        Office office = Office.findById(params.officeId as Long )
         //println("-------------" + office.id)
         office.parkingFacility = officeCO.parkingFacility
         office.address = officeCO.address
@@ -127,6 +127,21 @@ class PropertyController {
             officeCO.errors.allErrors.each { println(it) }
             render(view: "editOffice", model: [officeCO: officeCO])
         }
+    }
+
+    def deleteHouse() {
+
+        House house=House.findById(params.houseId as Long)
+        house.delete(flush: true)
+        redirect(action: "myPosts")
+
+    }
+
+    def deleteOffice() {
+
+        Office office=Office.findById(params.officeId as Long)
+        office.delete(flush: true)
+        redirect(action: "myPosts")
     }
 
 

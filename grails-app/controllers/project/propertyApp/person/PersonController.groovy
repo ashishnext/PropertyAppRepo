@@ -19,7 +19,7 @@ class PersonController {
             redirect(controller: "landing", action: "home")
         }
         else {
-            registrationCO.errors.allErrors.each {println(it)}
+            registrationCO.errors.each {println(it)}
             render(view: "/landing/login", model: [registrationCO:registrationCO])
         }
 

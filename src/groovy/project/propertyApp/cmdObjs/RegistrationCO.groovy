@@ -22,7 +22,7 @@ class RegistrationCO {
             }
         }
 
-        username validator: {val ->
+        username email: true,  validator: {val ->
             if (User.findByUsername(val)) {
                 return false
             }

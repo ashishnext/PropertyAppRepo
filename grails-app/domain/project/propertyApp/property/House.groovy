@@ -5,6 +5,7 @@ class House extends Property{
 
 
     static constraints = {
+
     }
 
     static List<House> newHousePosted() {

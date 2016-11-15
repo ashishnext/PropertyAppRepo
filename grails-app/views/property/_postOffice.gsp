@@ -14,8 +14,11 @@
 
     <g:hasErrors bean="${officeCO}" field="location">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="location">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -30,8 +33,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="address">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="address">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -45,8 +51,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="pincode">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="pincode">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -60,8 +69,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="area">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="area">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -75,8 +87,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="price">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="price">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -91,8 +106,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="parkingFacility">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="parkingFacility">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -108,8 +126,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="propertyFor">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="propertyFor">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -119,16 +140,13 @@
         %{--<label for="example-text-input4" class="col-xs-2 col-form-label">Price</label>--}%
         %{--<div class="col-xs-10">--}%
         %{--<input class="form-control" type="text" value="In sqfeet" id="example-text-input4" name="price">--}%
-        <g:if test="${actionName == 'postProperty'}">
-            <g:actionSubmit value="Post" action="saveOffice"></g:actionSubmit>
-        </g:if>
-        <g:elseif test="${actionName=='editOffice'}">
-            <g:actionSubmit value="Update" action="updateOffice"></g:actionSubmit>
-        </g:elseif>
-        <g:else>
-            <g:actionSubmit value="Update" action="editOffice"></g:actionSubmit>
+        <g:if test="${actionName == 'editOffice'}">
 
+            <g:actionSubmit value="Update" action="updateOffice"></g:actionSubmit>
+        </g:if>
+        <g:else>
+            <g:actionSubmit value="Post" action="saveOffice"></g:actionSubmit>
         </g:else>
         %{--</div>--}%
     </div>
-</g:form>
+</g:form>   

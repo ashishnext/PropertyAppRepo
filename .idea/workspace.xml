@@ -34,71 +34,11 @@
       <file leaf-file-name="PropertyController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.68">
-              <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            <state vertical-scroll-proportion="-85.8">
+              <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
               <folding>
                 <element signature="e#38#92#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyService.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OfficeCO.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editOffice.gsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/editOffice.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23767605">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myPosts.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.734694">
-              <caret line="109" column="113" selection-start-line="109" selection-start-column="113" selection-end-line="109" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseCO.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editHouse.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/editHouse.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7551022">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,17 +47,7 @@
         <entry file="file://$PROJECT_DIR$/grails-app/views/property/postProperty.gsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.244898">
-              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_postOffice.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.959183">
-              <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -126,8 +56,81 @@
       <file leaf-file-name="_postHouse.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.612245">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="134" selection-end-column="17" />
+            <state vertical-scroll-proportion="-5.7755103">
+              <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="152" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_postOffice.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.3732395">
+              <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myPosts.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-33.32653">
+              <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Property.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.553571">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationCO.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editOffice.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/property/editOffice.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0408163">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/landing/login.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-34.55102">
+              <caret line="140" column="81" selection-start-line="140" selection-start-column="81" selection-end-line="140" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -148,7 +151,6 @@
         <option value="$PROJECT_DIR$/grails-app/views/landing/demo.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/LandingController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/person/Person.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/person/PersonService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/landing/check.gsp" />
@@ -157,28 +159,29 @@
         <option value="$PROJECT_DIR$/grails-app/views/property/house.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_sideBar.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/app.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/landing/home.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/landing/login.gsp" />
         <option value="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/editHouse.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/postProperty.gsp" />
         <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/editOffice.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/landing/login.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/editOffice.gsp" />
       </list>
     </option>
   </component>
@@ -764,7 +767,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LinkshareRepo" />
-    <property name="SearchEverywhereHistoryKey" value="messages.p&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;url&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/layouts/app.gsp&#10;offic&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;house&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;property&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;offi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/web-app/fonts/eleganticons/ElegantIcons.woff&#10;propert&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;home&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/landing/home.gsp&#10;defau&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/target/work/plugins/spring-security-core-2.0.0/grails-app/conf/DefaultSecurityConfig.groovy&#10;confi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/Config.groovy&#10;Prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;person&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/person/Person.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="message&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;house&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;messages.p&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;url&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/layouts/app.gsp&#10;offic&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;property&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;offi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/web-app/fonts/eleganticons/ElegantIcons.woff&#10;propert&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;home&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/landing/home.gsp&#10;defau&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/target/work/plugins/spring-security-core-2.0.0/grails-app/conf/DefaultSecurityConfig.groovy&#10;confi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/Config.groovy&#10;Prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;person&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/person/Person.groovy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1215,12 +1218,12 @@
       <workItem from="1478943724579" duration="7836000" />
       <workItem from="1478969912426" duration="4123000" />
       <workItem from="1479031996518" duration="35677000" />
-      <workItem from="1479175531460" duration="14715000" />
+      <workItem from="1479175531460" duration="26629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117560000" />
+    <option name="totallyTimeSpent" value="129474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1357,6 +1360,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,6 +1432,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1435,6 +1440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,6 +1456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="135" column="38" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1477,24 +1484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.553571">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1506,14 +1495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/person/Person.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1521,17 +1502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1560,33 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/landing/login.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7755103">
-          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.483871">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.3061223">
@@ -1606,34 +1549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.734694">
-          <caret line="109" column="113" selection-start-line="109" selection-start-column="113" selection-end-line="109" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/postProperty.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.244898">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1646,32 +1565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.68">
-          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
-          <folding>
-            <element signature="e#38#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.612245">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="134" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.959183">
-          <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/editHouse.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7551022">
@@ -1680,10 +1573,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.2">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="2" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.064516">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.285714">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.553571">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/editOffice.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23767605">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state vertical-scroll-proportion="-7.0408163">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.32653">
+          <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/landing/login.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.55102">
+          <caret line="140" column="81" selection-start-line="140" selection-start-column="81" selection-end-line="140" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-85.8">
+          <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
+          <folding>
+            <element signature="e#38#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/postProperty.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.244898">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7755103">
+          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="152" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3732395">
+          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
           <folding />
         </state>
       </provider>

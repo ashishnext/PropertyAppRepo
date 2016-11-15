@@ -16,6 +16,7 @@ class Property {
     static belongsTo = [person: Person]
 
     static constraints = {
+
     }
 
     static mapping = {

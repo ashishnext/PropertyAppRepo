@@ -15,8 +15,11 @@
 
     <g:hasErrors bean="${houseCO}" field="location">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="location">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -31,8 +34,11 @@
 
     <g:hasErrors bean="${houseCO}" field="address">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="address">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -47,8 +53,11 @@
 
     <g:hasErrors bean="${houseCO}" field="pincode">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="pincode">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -63,8 +72,11 @@
 
     <g:hasErrors bean="${houseCO}" field="rooms">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="rooms">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -79,8 +91,11 @@
 
     <g:hasErrors bean="${houseCO}" field="area">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="area">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -95,8 +110,11 @@
 
     <g:hasErrors bean="${houseCO}" field="price">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="price">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -113,8 +131,11 @@
 
     <g:hasErrors bean="${houseCO}" field="propertyFor">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${houseCO}" field="propertyFor">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -123,16 +144,17 @@
 
     <div class="form-group row">
 
-        <g:if test="${actionName == 'postProperty'}">
-            <g:actionSubmit value="Post" action="saveHouse"></g:actionSubmit>
-        </g:if>
-        <g:elseif test="${actionName=='editHouse'}">
-            <g:actionSubmit value="Update" action="updateHouse"></g:actionSubmit>
-        </g:elseif>
-        <g:else>
-            <g:actionSubmit value="Update" action="editHouse"></g:actionSubmit>
+        <g:if test="${actionName == 'editHouse'}">
 
+            <g:actionSubmit value="Update" action="updateHouse"></g:actionSubmit>
+        </g:if>
+        <g:else>
+            <g:actionSubmit value="Post" action="saveHouse"></g:actionSubmit>
         </g:else>
+        %{--<g:else>--}%
+            %{--<g:actionSubmit value="Update" action="editHouse"></g:actionSubmit>--}%
+
+        %{--</g:else>--}%
 
     </div>
 </g:form>
