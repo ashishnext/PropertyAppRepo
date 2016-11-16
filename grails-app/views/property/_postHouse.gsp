@@ -2,7 +2,7 @@
 <h4 class="heading bold">Post House For Rent/SALE</h4><br>
 %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
-<g:form params="[houseId: houseCO?.id ]">
+<g:form action="updateHouse" params="[houseId: houseCO?.id ]" method="post">
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -125,7 +125,7 @@
             %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
             <g:select name="propertyFor"
                       from="${project.propertyApp.enums.Enums.PropertyFor.propertyForList()}"
-                      noSelection="['': 'Select']"></g:select>
+                      noSelection="['': 'Select']" value="${houseCO?.propertyFor}"></g:select>
         </div>
     </div>
 
@@ -140,21 +140,13 @@
     </g:hasErrors>
 
 
-    <g:hiddenField name="id"></g:hiddenField>
+    <g:hiddenField name="id" value="${houseCOId?.id}"></g:hiddenField>
+
+    <g:hiddenField name="id2" value="${houseCOId?.id2}"></g:hiddenField>
 
     <div class="form-group row">
 
-        <g:if test="${actionName == 'editHouse'}">
-
-            <g:actionSubmit value="Update" action="updateHouse"></g:actionSubmit>
-        </g:if>
-        <g:else>
-            <g:actionSubmit value="Post" action="saveHouse"></g:actionSubmit>
-        </g:else>
-        %{--<g:else>--}%
-            %{--<g:actionSubmit value="Update" action="editHouse"></g:actionSubmit>--}%
-
-        %{--</g:else>--}%
+            <g:submitButton name="Update"></g:submitButton>
 
     </div>
 </g:form>

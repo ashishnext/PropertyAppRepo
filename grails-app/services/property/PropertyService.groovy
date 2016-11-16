@@ -20,6 +20,8 @@ class PropertyService {
         House house = new House(location: co.location, address: co.address, pincode: co.pincode, rooms: co.rooms, area: co.area,
                 price: co.price, propertyFor: co.propertyFor, person: person).save(flush: true, failOnError: true)
         person.addToProps(house).save(failOnError: true, flush: true)
+
+        co.id=house.id
     }
 
     def saveOfficeMethod(OfficeCO co) {
@@ -27,6 +29,8 @@ class PropertyService {
         Office office = new Office(location: co.location, address: co.address, pincode: co.pincode, parkingFacility: co.parkingFacility, area: co.area,
                 price: co.price, propertyFor: co.propertyFor, person: person).save(flush: true, failOnError: true)
         person.addToProps(office).save(failOnError: true, flush: true)
+
+        co.id=office.id
     }
 
     def myPostsMethod() {

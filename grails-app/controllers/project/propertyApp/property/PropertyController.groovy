@@ -3,9 +3,10 @@ package project.propertyApp.property
 import grails.plugin.springsecurity.annotation.Secured
 import project.propertyApp.cmdObjs.HouseCO
 import project.propertyApp.cmdObjs.OfficeCO
+import project.propertyApp.enums.Enums
 import project.propertyApp.person.Person
 
-@Secured('IS_AUTHENTICATED_FULLY')
+@Secured(['ROLE_ADMIN', 'ROLE_OWNER', 'ROLE_AGENT'])
 class PropertyController {
     def springSecurityService
     def propertyService
@@ -17,25 +18,28 @@ class PropertyController {
     }
 
     def saveHouse(HouseCO houseCO) {
-        if (houseCO.validate()) {
 
-            propertyService.saveHouseMethod(houseCO)
-            redirect(controller: "landing", action: "home")
-        } else {
-            houseCO.errors.allErrors.each { println(it) }
-            render(view: "postProperty", model: [houseCO: houseCO])
-        }
+            if (houseCO.validate()) {
+
+                propertyService.saveHouseMethod(houseCO)
+                redirect(controller: "landing", action: "home")
+            } else {
+                houseCO.errors.allErrors.each { println(it) }
+                render(view: "postProperty", model: [houseCO: houseCO])
+            }
 
     }
 
     def saveOffice(OfficeCO officeCO) {
+
+
         if (officeCO.validate()) {
 
             propertyService.saveOfficeMethod(officeCO)
             redirect(controller: "landing", action: "home")
         } else {
             officeCO.errors.allErrors.each { println(it) }
-            render(view: "postProperty", model: [officeCO:officeCO])
+            render(view: "postProperty", model: [officeCO: officeCO])
         }
 
     }
@@ -48,23 +52,57 @@ class PropertyController {
         render(view: "myPosts", model: [houseList: houseList, officeList: officeList])
     }
 
-    def searchByLocation() {
+    @Secured('IS_AUTHENTICATED_ANONYMOUSLY')
+    def allRentProperties() {
+        def c = House.createCriteria()
+        List<House> results = c.list {
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
+        }
+
+        def c1 = Office.createCriteria()
+        List<Office> results1 = c1.list {
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
+        }
+
+        flash.rent = "All properties for rent"
+        render(view: "/landing/home", model: [allRentHouses: results, allRentOffices: results1])
+    }
+
+    @Secured('IS_AUTHENTICATED_ANONYMOUSLY')
+    def allSaleProperties() {
+        def c = House.createCriteria()
+        List<House> results = c.list {
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
+        }
+
+        def c1 = Office.createCriteria()
+        List<Office> results1 = c1.list {
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
+        }
+
+        flash.sale = "All properties for sale"
+        render(view: "/landing/home", model: [allSaleHouses: results, allSaleOffices: results1])
+    }
+
+    @Secured('IS_AUTHENTICATED_ANONYMOUSLY')
+    def search() {
 
         String[] priceRange = params.price.split("-")
         def c = House.createCriteria()
         List<House> results = c.list() {
             ilike("location", params.searchLocation)
             between("price", priceRange[0] as Long, priceRange[1] as Long)
-//            eq("propertyFor", params.propertyFor)
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
         }
 
         def c1 = Office.createCriteria()
         List<House> results1 = c1.list() {
             ilike("location", params.searchLocation)
             between("price", priceRange[0] as Long, priceRange[1] as Long)
-//            eq("propertyFor", params.propertyFor)
+            eq("propertyFor", params.propertyFor as Enums.PropertyFor)
         }
 
+        flash.search = "Search Result"
         render(view: "/landing/home", model: [houseByLocation: results, officeByLocation: results1])
 
 //        render(view: "/landing/home", model: [houseByLocation:results, officeByLocation:results1])
@@ -77,8 +115,9 @@ class PropertyController {
     }
 
     def updateHouse(HouseCO houseCO) {
+
         House house = House.findById(params.houseId as Long)
-        println("-------------" + house.id)
+
         house.rooms = houseCO.rooms
         house.address = houseCO.address
         house.location = houseCO.location
@@ -86,12 +125,13 @@ class PropertyController {
         house.area = houseCO.area
         house.price = houseCO.price
         house.propertyFor = houseCO.propertyFor
-        houseCO.id=params.id
+        houseCO.id = params.houseId
+        houseCO.id2=params.id2
 
 
         if (houseCO.validate()) {
             house.save(failOnError: true, flush: true)
-            flash.message="Your post is updated successfully"
+            flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 
         } else {
@@ -102,12 +142,12 @@ class PropertyController {
     }
 
     def editOffice() {
-        Office office=Office.findById(params.officeId as Long)
-        render(view: "editOffice", model: [officeObj: office] )
+        Office office = Office.findById(params.officeId as Long)
+        render(view: "editOffice", model: [officeObj: office])
     }
 
     def updateOffice(OfficeCO officeCO) {
-        Office office = Office.findById(params.officeId as Long )
+        Office office = Office.findById(params.officeId as Long)
         //println("-------------" + office.id)
         office.parkingFacility = officeCO.parkingFacility
         office.address = officeCO.address
@@ -116,11 +156,11 @@ class PropertyController {
         office.area = officeCO.area
         office.price = officeCO.price
         office.propertyFor = officeCO.propertyFor
-        officeCO.id=params.id
+        officeCO.id = params.officeId
 
         if (officeCO.validate()) {
             office.save(failOnError: true, flush: true)
-            flash.message="Your post is updated successfully"
+            flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 
         } else {
@@ -131,7 +171,7 @@ class PropertyController {
 
     def deleteHouse() {
 
-        House house=House.findById(params.houseId as Long)
+        House house = House.findById(params.houseId as Long)
         house.delete(flush: true)
         redirect(action: "myPosts")
 
@@ -139,7 +179,7 @@ class PropertyController {
 
     def deleteOffice() {
 
-        Office office=Office.findById(params.officeId as Long)
+        Office office = Office.findById(params.officeId as Long)
         office.delete(flush: true)
         redirect(action: "myPosts")
     }

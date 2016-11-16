@@ -13,11 +13,13 @@ class HouseCO {
     String propertyFor
     String rooms
     String id
+    String id2
 
     static constraints= {
 
         pincode size: 6
         id nullable: true
+        id2 nullable: true
     }
 
 }

@@ -1,5 +1,5 @@
 
-<%@ page import="project.propertyApp.person.Person" contentType="text/html;charset=UTF-8" %>
+<%@ page import="project.propertyApp.enums.Enums; project.propertyApp.person.Person" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title><g:layoutTitle /></title>
@@ -44,20 +44,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="${createLink(controller: "landing", action: "home")}">Home</a></li>
-                <li><a href="${createLink(controller: "property", action: "postProperty")}">Sale / Rent</a></li>
-                <li><a href="${createLink(controller: "landing", action: "login")}" data-toggle="modal"  class="btn btn-blue">Login / SignUp</a></li>
+                <li><a href="${createLink(controller: "landing", action: "home")}" class="btn btn-info">Home</a></li>
+                <li><a href="${createLink(controller: "property", action: "postProperty")}" class="btn btn-info">Post Property</a></li>
+                <li><a href="${createLink(controller: "landing", action: "login")}" class="btn btn-info">Login / SignUp</a></li>
                 <li>          <div class="dropdown">
-                    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
-                        %{--<img style="height:50px;width:50px;"src="${createLink(controller: "dashboard", action: "renderImage")}" />--}%
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+
+                        <img style="height:50px;width:50px;"src="${createLink(controller: "landing", action: "renderImage")}"/>
+
+
 
                         <sec:ifLoggedIn>
                             ${project.propertyApp.person.Person.get(sec.loggedInUserInfo(field: 'id')).name}<br>
-                            ${project.propertyApp.person.Person.get(sec.loggedInUserInfo(field: 'id')).username}
+                            %{--${project.propertyApp.person.Person.get(sec.loggedInUserInfo(field: 'id')).username}--}%
 
                         </sec:ifLoggedIn>
 
-                        <span class="caret"></span> </button>
+                        <span class="caret"></span>  </button>
                     <ul class="dropdown-menu">
                         <li><a href="#">profile</a></li>
                         <li><a href="${createLink(controller:"logout")}">Logout</a></li>
@@ -65,6 +68,11 @@
                     </ul>
                 </div></li>
             </ul>
+        <ul class="nav navbar-nav navbar-left main-nav">
+            <li><a href="${createLink(controller: "property", action: "allRentProperties", params: [propertyFor: project.propertyApp.enums.Enums.PropertyFor.RENT])}" class="btn btn-info" >For Rent</a></li>
+            <li><a href="${createLink(controller: "property", action: "allSaleProperties", params: [propertyFor: project.propertyApp.enums.Enums.PropertyFor.SALE])}" class="btn btn-info" >For Sale</a></li>
+        </ul>
+
         </div>
 
         %{--<div class="nav navbar-nav navbar-right">--}%

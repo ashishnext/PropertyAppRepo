@@ -1,7 +1,7 @@
 <h4 class="heading bold">Post Office For Rent/SALE</h4><br>
 %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
-<g:form params="[officeId: officeCO?.id]">
+<g:form action="updateOffice" params="[officeId: officeCO?.id]" method="post">
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -101,7 +101,7 @@
         <div class="col-xs-3">
             %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
             <g:select name="parkingFacility" from="['True', 'False']"
-                      noSelection="['': 'Select']"></g:select>
+                      noSelection="['': 'Select']" value="${officeCO?.parkingFacility}"></g:select>
         </div>
     </div>
     <g:hasErrors bean="${officeCO}" field="parkingFacility">
@@ -121,7 +121,7 @@
             %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
             <g:select name="propertyFor"
                       from="${project.propertyApp.enums.Enums.PropertyFor.propertyForList()}"
-                      noSelection="['': 'Select']"></g:select>
+                      noSelection="['': 'Select']" value="${officeCO?.propertyFor}"></g:select>
         </div>
     </div>
     <g:hasErrors bean="${officeCO}" field="propertyFor">
@@ -140,13 +140,10 @@
         %{--<label for="example-text-input4" class="col-xs-2 col-form-label">Price</label>--}%
         %{--<div class="col-xs-10">--}%
         %{--<input class="form-control" type="text" value="In sqfeet" id="example-text-input4" name="price">--}%
-        <g:if test="${actionName == 'editOffice'}">
 
-            <g:actionSubmit value="Update" action="updateOffice"></g:actionSubmit>
-        </g:if>
-        <g:else>
-            <g:actionSubmit value="Post" action="saveOffice"></g:actionSubmit>
-        </g:else>
+
+        <g:submitButton name="Update"></g:submitButton>
+
         %{--</div>--}%
     </div>
-</g:form>   
+</g:form>

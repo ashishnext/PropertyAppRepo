@@ -1,6 +1,7 @@
 package project.propertyApp.person
 
 import grails.plugin.springsecurity.annotation.Secured
+import org.springframework.web.multipart.MultipartHttpServletRequest
 import project.propertyApp.cmdObjs.RegistrationCO
 
 @Secured('permitAll')
@@ -11,9 +12,11 @@ class PersonController {
     def index() {}
 
     def registration(RegistrationCO registrationCO) {
+        MultipartHttpServletRequest mpr=(MultipartHttpServletRequest)request
+        def file=mpr.getFile('photo')
 
         if (registrationCO.validate()) {
-            personService.registrationMethod(registrationCO)
+            personService.registrationMethod(registrationCO, file)
             springSecurityService.reauthenticate(registrationCO.username)
 //            render(view: "/landing/home")
             redirect(controller: "landing", action: "home")

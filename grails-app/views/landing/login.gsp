@@ -56,7 +56,7 @@
         <div class="col-lg-4 col-lg-offset-1" >
             <div class=" well bs-component">
 
-                <g:form method ="post" class="bs-component"    controller="person" action="registration" >
+                <g:form method ="post" class="bs-component"  enctype="multipart/form-data"  controller="person" action="registration" >
                     <legend>Registration</legend>
                     <div class="form-group">
                         <label class="control-label" for="focusedInput">Name</label>
@@ -145,8 +145,12 @@
                         </div>
                     </g:hasErrors>
 
+                    <label class="control-label" >PhotoUpload</label>
+                %{--<g:uploadForm  controller="landing" action="index" >--}%
+                    <input type="file" name="photo"  id="photo"><br>
+
                     <div class="form-group">
-                        <g:submitButton name="Submit" class="btn btn-primary"></g:submitButton>
+                        <g:actionSubmit name="" class="btn btn-primary" value="Submit" action="registration"></g:actionSubmit>
                     </div>
                 </g:form>
             </div>

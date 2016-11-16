@@ -11,6 +11,7 @@ class RegistrationCO {
     String password
     String confirmPassword
     String role
+    byte[] photo
 
     static constraints= {
         confirmPassword nullable: false, validator: {val, obj ->

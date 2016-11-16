@@ -17,7 +17,7 @@
             </div>
 
             <div class="col-md-5">
-                <g:render template="postHouse" model="[houseCO:houseObj? houseObj: houseCO]"></g:render>
+                <g:render template="postHouse" model="[houseCO:houseObj? houseObj: houseCO, houseCOId: houseCO]"></g:render>
             </div>
     </div>
 </div>
