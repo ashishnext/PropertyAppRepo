@@ -36,4 +36,32 @@ class PropertyService {
     def myPostsMethod() {
 
     }
+
+    def updateHouseMethod(HouseCO houseCO, String houseId) {
+        House house = House.findById(houseId as Long)
+
+        house.rooms = houseCO.rooms
+        house.address = houseCO.address
+        house.location = houseCO.location
+        house.pincode = houseCO.pincode
+        house.area = houseCO.area
+        house.price = houseCO.price
+        house.propertyFor = houseCO.propertyFor
+
+        house.save(failOnError: true, flush: true)
+    }
+
+    def updateOfficeMethod(OfficeCO officeCO, String officeId) {
+        Office office = Office.findById(officeId as Long)
+        office.parkingFacility = officeCO.parkingFacility
+        office.address = officeCO.address
+        office.location = officeCO.location
+        office.pincode = officeCO.pincode
+        office.area = officeCO.area
+        office.price = officeCO.price
+        office.propertyFor = officeCO.propertyFor
+
+        office.save(failOnError: true, flush: true)
+
+    }
 }

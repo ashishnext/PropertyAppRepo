@@ -19,14 +19,14 @@ class PropertyController {
 
     def saveHouse(HouseCO houseCO) {
 
-            if (houseCO.validate()) {
+        if (houseCO.validate()) {
 
-                propertyService.saveHouseMethod(houseCO)
-                redirect(controller: "landing", action: "home")
-            } else {
-                houseCO.errors.allErrors.each { println(it) }
-                render(view: "postProperty", model: [houseCO: houseCO])
-            }
+            propertyService.saveHouseMethod(houseCO)
+            redirect(controller: "landing", action: "home")
+        } else {
+            houseCO.errors.allErrors.each { println(it) }
+            render(view: "postProperty", model: [houseCO: houseCO])
+        }
 
     }
 
@@ -116,28 +116,16 @@ class PropertyController {
 
     def updateHouse(HouseCO houseCO) {
 
-        House house = House.findById(params.houseId as Long)
-
-        house.rooms = houseCO.rooms
-        house.address = houseCO.address
-        house.location = houseCO.location
-        house.pincode = houseCO.pincode
-        house.area = houseCO.area
-        house.price = houseCO.price
-        house.propertyFor = houseCO.propertyFor
         houseCO.id = params.houseId
-        houseCO.id2=params.id2
-
 
         if (houseCO.validate()) {
-            house.save(failOnError: true, flush: true)
+            propertyService.updateHouseMethod(houseCO, params.houseId)
             flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 
         } else {
             houseCO.errors.allErrors.each { println(it) }
             render(view: "editHouse", model: [houseCO: houseCO])
-
         }
     }
 
@@ -147,19 +135,11 @@ class PropertyController {
     }
 
     def updateOffice(OfficeCO officeCO) {
-        Office office = Office.findById(params.officeId as Long)
-        //println("-------------" + office.id)
-        office.parkingFacility = officeCO.parkingFacility
-        office.address = officeCO.address
-        office.location = officeCO.location
-        office.pincode = officeCO.pincode
-        office.area = officeCO.area
-        office.price = officeCO.price
-        office.propertyFor = officeCO.propertyFor
+
         officeCO.id = params.officeId
 
         if (officeCO.validate()) {
-            office.save(failOnError: true, flush: true)
+            propertyService.updateOfficeMethod(officeCO, params.officeId)
             flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 

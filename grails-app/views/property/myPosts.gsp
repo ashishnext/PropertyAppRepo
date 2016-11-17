@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-6">
             <g:if test="${flash.message}">
-                <h4>${flash.message}</h4>
+                <h4 style="color: #00a8ff" class="bold text-center">${flash.message}</h4>
             </g:if>
             <g:if test="${houseList}">
 

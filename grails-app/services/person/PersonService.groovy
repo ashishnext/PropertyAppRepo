@@ -9,6 +9,7 @@ import project.propertyApp.person.Person
 
 @Transactional
 class PersonService {
+    def mailService
 
     def serviceMethod() {
 
@@ -34,6 +35,15 @@ class PersonService {
             Person person = new Person(username: co.username, password: co.password, name: co.name, age: co.age, photoLocation: m+n).save(failOnError: true, flush: true)
             UserRole.create(person, Role.findByAuthority("ROLE_CUSTOMER"))
         }
+
+
+//            mailService.sendMail()   {
+//                    to co.username
+//                    subject "Welcome! message  from  LinkShare"
+//                    body " hi ${co.name} , you  are  sucessfully Registered.It is  pleasure to you have on board."
+//
+//
+//                }
 
     }
 }
