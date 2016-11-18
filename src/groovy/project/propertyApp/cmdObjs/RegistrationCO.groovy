@@ -11,6 +11,7 @@ class RegistrationCO {
     String password
     String confirmPassword
     String role
+    byte[] photo
 
     static constraints= {
         confirmPassword nullable: false, validator: {val, obj ->
@@ -22,7 +23,7 @@ class RegistrationCO {
             }
         }
 
-        username validator: {val ->
+        username email: true,  validator: {val ->
             if (User.findByUsername(val)) {
                 return false
             }

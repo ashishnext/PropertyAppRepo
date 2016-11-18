@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-6">
             <g:if test="${flash.message}">
-                <h4>${flash.message}</h4>
+                <h4 style="color: #00a8ff" class="bold text-center">${flash.message}</h4>
             </g:if>
             <g:if test="${houseList}">
 
@@ -54,7 +54,7 @@
                                     <td>${hl.propertyFor}</td>
                                     <td>${hl.rooms}</td>
                                     <td><g:link controller="property" action="editHouse" params="[houseId:hl.id]">Edit</g:link> </td>
-                                    <td><button class="btn-default">Delete</button> </td>
+                                    <td><g:link  controller="property" action="deleteHouse" params="[houseId: hl.id]">Delete</g:link> </td>
                                 </tr>
                             </g:each>
                             </tbody>
@@ -107,8 +107,8 @@
                                     <td>${hl.price}</td>
                                     <td>${hl.propertyFor}</td>
                                     <td>${hl.parkingFacility}</td>
-                                    <td><g:link controller="property" action="editOffice" params="[officeId:hl.id]">Edit</g:link> </td>
-                                    <td><button class="btn-default">Delete</button> </td>
+                                    <td><g:link  controller="property" action="editOffice" params="[officeId:hl.id]">Edit</g:link> </td>
+                                    <td><g:link  controller="property" action="deleteOffice" params="[officeId:hl.id]">Delete</g:link> </td>
                                 </tr>
                             </g:each>
                             </tbody>
@@ -127,5 +127,12 @@
     </div>
 </div>
 
+
 </body>
+
+%{--<script>$(document).ready(function(){--}%
+    %{--$("#confirm").click(function() {--}%
+        %{--return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}')--}%
+    %{--});--}%
+%{--});</script>--}%
 </html>

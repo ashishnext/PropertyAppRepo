@@ -1,9 +1,11 @@
 package project.propertyApp.landing
 
 import grails.plugin.springsecurity.annotation.Secured
+import project.propertyApp.person.Person
 
 @Secured('permitAll')
 class LandingController {
+    def springSecurityService
 
     def index() {
         render(view: "demo")
@@ -14,22 +16,34 @@ class LandingController {
     }
 
     def home() {
-
-        if (flash.message) {
-            render(view: "home", model: [houseByLocation:flash.message.houseByLocation, officeByLocation:flash.message.officeByLocation])
-        }
-        else {
-            render(view: "home")
-        }
+        flash.home="All properties posted"
     }
 
-    def newHoseProject() {
 
+    def renderImage() {
+        Person person=(springSecurityService.currentUser)
+        def file = new File(person.photoLocation)
+        def img = file.bytes
+        response.contentType='image/*' // or the appropriate image content type
+        response.outputStream << img
+        response.outputStream.flush()
     }
 
-    def radioSearch() {
-
-      render(view: "home", model: [radioVal:params.cb])
-
+    def homeImage() {
+        def file = new File("/home/ashish/Desktop/burj_khalifa.jpg")
+        def img = file.bytes
+        response.contentType='image/*' // or the appropriate image content type
+        response.outputStream << img
+        response.outputStream.flush()
     }
+
+    def propertyImage() {
+        def file = new File(params.photoLocation)
+        def img = file.bytes
+        response.contentType='image/*' // or the appropriate image content type
+        response.outputStream << img
+        response.outputStream.flush()
+    }
+
+
 }

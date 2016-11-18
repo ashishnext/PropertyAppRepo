@@ -2,6 +2,7 @@ package project.propertyApp.property
 
 class Office extends Property {
     Boolean parkingFacility
+    Boolean liftAvailable
 
     static constraints = {
     }

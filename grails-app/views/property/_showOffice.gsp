@@ -3,49 +3,40 @@
     <div class="bs-docs-section">
 
         <h3 class="text-center alert-info"><b>Offices Posted</b></h3>
-        %{--<div class="row">--}%
-        %{--<div class="col-lg-12">--}%
-        %{--<div class="page-header">--}%
-        %{--</div>--}%
-
-        <div class="bs-component">
-            <table class="table table-striped table-hover ">
-                <thead>
-                <tr>
-                    %{--<th>#</th>--}%
-                    <th>Location</th>
-                    <th>Address</th>
-                    <th>Area(In sqmtr)</th>
-                    <th>Price</th>
-                    <th>Property For</th>
-                    <th>Parking Facility</th>
-                    <th>Posted By</th>
-                    %{--<th>Delete</th>--}%
-                </tr>
-                </thead>
-                <tbody>
 
                 <g:each in="${showOfficeList}" var="hl">
 
-                    <tr class="alert-info">
-                        %{--<td>4</td>--}%
-                        <td>${hl.location}</td>
-                        <td>${hl.address}</td>
-                        <td>${hl.area}</td>
-                        <td>${hl.price}</td>
-                        <td>${hl.propertyFor}</td>
-                        <td>${hl.parkingFacility}</td>
-                        <td>${hl.person.name}</td>
-                        <td></td>
-                        %{--<td><g:link controller="topic" action="editTopic">Edit</g:link> </td>--}%
-                        %{--<td><button class="btn-default">Delete</button> </td>--}%
-                    </tr>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <img style="height:300px;width:500px;"
+                                 src="${createLink(controller: "landing", action: "propertyImage", params: [photoLocation: hl.photoLocation])}"/>
+
+                            <p class="bold"><span
+                                    class="1 blue">Location -</span> <span>${hl.location}</span> &nbsp; &nbsp; <span
+                                    class="2 blue">Address -</span><span>${hl.address}</span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Area(In sqfeet) -</span> <span>${hl.area}</span>  &nbsp; &nbsp;<span
+                                    class="2 blue">Property For -</span> <span>${hl.propertyFor}</span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Parking Facility -</span>  <span>${hl.parkingFacility}</span> &nbsp; &nbsp; <span
+                                    class="2 blue">Price -</span>  <span>${hl.price}</span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Lift Facility -</span>  <span>${hl.liftAvailable}</span> &nbsp; &nbsp; <span
+                                    class="2 blue"></span>  <span></span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Posted By -</span> <span>${hl.person.name}</span> &nbsp; &nbsp; <span
+                                    class="2 blue">Phone No -</span>  <span>${hl.phoneNum}</span></p>
+
+                        </div>
+                        <demo:advBy person="${hl.person}"><p class="bold blue">Advertised By -</p></demo:advBy>
+                    </div>
+
                 </g:each>
-                </tbody>
-            </table>
-        </div><!-- /example -->
-    %{--</div>--}%
-    %{--</div>--}%
     </div>
 </g:if>
 <g:else>

@@ -16,7 +16,20 @@
         </div>
 
         <div class="col-md-5">
-            <g:render template="postOffice" model="[officeCO: officeObj ? officeObj: officeCO]"></g:render>
+            <h4 class="heading bold">Update Office Property</h4><br>
+        %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
+
+            <g:form action="updateOffice"  method="post" enctype="multipart/form-data">
+
+                <g:render template="postOffice" model="[officeCO: officeObj ? officeObj: officeCO]"></g:render>
+
+                <div class="form-group row">
+                    <g:submitButton name="Update"></g:submitButton>
+                </div>
+
+            </g:form>
+
+
         </div>
     </div>
 </div>

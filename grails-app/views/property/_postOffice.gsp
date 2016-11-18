@@ -1,7 +1,4 @@
-<h4 class="heading bold">Post Office For Rent/SALE</h4><br>
-%{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
-<g:form params="[officeId: officeCO?.id]">
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -14,8 +11,11 @@
 
     <g:hasErrors bean="${officeCO}" field="location">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="location">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -30,8 +30,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="address">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="address">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -45,8 +48,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="pincode">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="pincode">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -60,8 +66,11 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="area">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="area">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -75,8 +84,29 @@
     </div>
     <g:hasErrors bean="${officeCO}" field="price">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="price">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
+        </div>
+    </g:hasErrors>
+
+    <div class="form-group row">
+        <label for="example-text-input4" class="col-xs-2 col-form-label">Phone No.</label>
+
+        <div class="col-xs-10">
+            <g:textField placeholder="Enter Phone No." class="form-control" type="text" id="example-text-input7"
+                         name="phoneNum" value="${officeCO?.phoneNum}"/>
+        </div>
+    </div>
+    <g:hasErrors bean="${officeCO}" field="phoneNum">
+        <div class="alert alert-danger">
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="phoneNum">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -86,13 +116,35 @@
         <div class="col-xs-3">
             %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
             <g:select name="parkingFacility" from="['True', 'False']"
-                      noSelection="['': 'Select']"></g:select>
+                      noSelection="['': 'Select']" value="${officeCO?.parkingFacility}"></g:select>
         </div>
     </div>
     <g:hasErrors bean="${officeCO}" field="parkingFacility">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="parkingFacility">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
+        </div>
+    </g:hasErrors>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Lift Facility</label>
+
+        <div class="col-xs-3">
+            %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+            <g:select name="liftAvailable" from="['True', 'False']"
+                      noSelection="['': 'Select']" value="${officeCO?.liftAvailable}"></g:select>
+        </div>
+    </div>
+    <g:hasErrors bean="${officeCO}" field="liftAvailable">
+        <div class="alert alert-danger">
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="liftAvailable">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
@@ -103,32 +155,19 @@
             %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
             <g:select name="propertyFor"
                       from="${project.propertyApp.enums.Enums.PropertyFor.propertyForList()}"
-                      noSelection="['': 'Select']"></g:select>
+                      noSelection="['': 'Select']" value="${officeCO?.propertyFor}"></g:select>
         </div>
     </div>
     <g:hasErrors bean="${officeCO}" field="propertyFor">
         <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <g:message code="CO.field.error"/>
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="propertyFor">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
         </div>
     </g:hasErrors>
 
-    <g:hiddenField name="id"></g:hiddenField>
+    <input type="file" name="photoOffice" id="photo" value="Photo"><br>
 
-    <div class="form-group row">
-        %{--<label for="example-text-input4" class="col-xs-2 col-form-label">Price</label>--}%
-        %{--<div class="col-xs-10">--}%
-        %{--<input class="form-control" type="text" value="In sqfeet" id="example-text-input4" name="price">--}%
-        <g:if test="${actionName == 'postProperty'}">
-            <g:actionSubmit value="Post" action="saveOffice"></g:actionSubmit>
-        </g:if>
-        <g:elseif test="${actionName=='editOffice'}">
-            <g:actionSubmit value="Update" action="updateOffice"></g:actionSubmit>
-        </g:elseif>
-        <g:else>
-            <g:actionSubmit value="Update" action="editOffice"></g:actionSubmit>
-
-        </g:else>
-        %{--</div>--}%
-    </div>
-</g:form>
+    <g:hiddenField name="id" value="${officeCO?.id}"></g:hiddenField>

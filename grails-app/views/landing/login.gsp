@@ -56,7 +56,7 @@
         <div class="col-lg-4 col-lg-offset-1" >
             <div class=" well bs-component">
 
-                <g:form method ="post" class="bs-component"    controller="person" action="registration" >
+                <g:form method ="post" class="bs-component"  enctype="multipart/form-data"  controller="person" action="registration" >
                     <legend>Registration</legend>
                     <div class="form-group">
                         <label class="control-label" for="focusedInput">Name</label>
@@ -65,8 +65,11 @@
                     <div>
                         <g:hasErrors bean="${registrationCO}" field="name">
                             <div class="alert alert-danger">
-                                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                <g:message code="RegistrationCO.name.null.error"/>
+                                <ul class="errors">
+                                    <g:eachError bean="${registrationCO}" field="name">
+                                        <li>${it.defaultMessage}</li>
+                                    </g:eachError>
+                                </ul>
                             </div>
                         </g:hasErrors>
                     </div>
@@ -77,8 +80,11 @@
                     </div>
                     <g:hasErrors bean="${registrationCO}" field="age">
                         <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <g:message code="RegistrationCO.name.null.error"/>
+                            <ul class="errors">
+                                <g:eachError bean="${registrationCO}" field="age">
+                                    <li>${it.defaultMessage}</li>
+                                </g:eachError>
+                            </ul>
                         </div>
                     </g:hasErrors>
 
@@ -88,9 +94,13 @@
                     </div>
                     <g:hasErrors bean="${registrationCO}" field="username">
                         <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <g:message code="RegistrationCO.name.null.error"/>
+                            <ul class="errors">
+                                <g:eachError bean="${registrationCO}" field="username">
+                                    <li>${it.defaultMessage}</li>
+                                </g:eachError>
+                            </ul>
                         </div>
+
                     </g:hasErrors>
 
                     <div class="form-group has-error">
@@ -99,8 +109,11 @@
                     </div>
                     <g:hasErrors bean="${registrationCO}" field="password">
                         <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <g:message code="RegistrationCO.name.null.error"/>
+                            <ul class="errors">
+                                <g:eachError bean="${registrationCO}" field="password">
+                                    <li>${it.defaultMessage}</li>
+                                </g:eachError>
+                            </ul>
                         </div>
                     </g:hasErrors>
 
@@ -110,8 +123,11 @@
                     </div>
                     <g:hasErrors bean="${registrationCO}" field="confirmPassword">
                         <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <g:message code="RegistrationCO.name.null.error"/>
+                            <ul class="errors">
+                                <g:eachError bean="${registrationCO}" field="confirmPassword">
+                                    <li>${it.defaultMessage}</li>
+                                </g:eachError>
+                            </ul>
                         </div>
                     </g:hasErrors>
 
@@ -121,13 +137,20 @@
                     </div>
                     <g:hasErrors bean="${registrationCO}" field="role">
                         <div class="alert alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <g:message code="RegistrationCO.name.null.error"/>
+                            <ul class="errors">
+                                <g:eachError bean="${registrationCO}" field="role">
+                                    <li>${it.defaultMessage}</li>
+                                </g:eachError>
+                            </ul>
                         </div>
                     </g:hasErrors>
 
+                    <label class="control-label" >PhotoUpload</label>
+                %{--<g:uploadForm  controller="landing" action="index" >--}%
+                    <input type="file" name="photo"  id="photo"><br>
+
                     <div class="form-group">
-                        <g:submitButton name="Submit" class="btn btn-primary"></g:submitButton>
+                        <g:actionSubmit name="" class="btn btn-primary" value="Submit" action="registration"></g:actionSubmit>
                     </div>
                 </g:form>
             </div>

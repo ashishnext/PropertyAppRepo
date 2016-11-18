@@ -2,9 +2,12 @@ package project.propertyApp.property
 
 class House extends Property{
     String rooms
+    Boolean furnished
+    Integer numOfBalconies
 
 
     static constraints = {
+
     }
 
     static List<House> newHousePosted() {
