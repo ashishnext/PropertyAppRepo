@@ -19,15 +19,6 @@ class LandingController {
         flash.home="All properties posted"
     }
 
-    def newHoseProject() {
-
-    }
-
-    def radioSearch() {
-
-      render(view: "home", model: [radioVal:params.cb])
-
-    }
 
     def renderImage() {
         Person person=(springSecurityService.currentUser)
@@ -45,4 +36,14 @@ class LandingController {
         response.outputStream << img
         response.outputStream.flush()
     }
+
+    def propertyImage() {
+        def file = new File(params.photoLocation)
+        def img = file.bytes
+        response.contentType='image/*' // or the appropriate image content type
+        response.outputStream << img
+        response.outputStream.flush()
+    }
+
+
 }

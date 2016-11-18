@@ -17,7 +17,18 @@
             </div>
 
             <div class="col-md-5">
-                <g:render template="postHouse" model="[houseCO:houseObj? houseObj: houseCO, houseCOId: houseCO]"></g:render>
+                <h4 class="heading bold">Update House Property</h4><br>
+            %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
+
+                <g:form action="updateHouse"  method="post" enctype="multipart/form-data">
+
+                <g:render template="postHouse" model="[houseCO:houseObj? houseObj: houseCO]"></g:render>
+
+                    <div class="form-group row">
+                        <g:submitButton name="Update"></g:submitButton>
+                    </div>
+
+                </g:form>
             </div>
     </div>
 </div>

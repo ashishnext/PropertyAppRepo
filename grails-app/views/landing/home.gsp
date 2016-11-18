@@ -30,22 +30,14 @@
         </div>
         </div>
 
+    %{--<demo:sayHi to="Ashish Gautam"/>--}%
+    %{--<demo:toUpper>how are you ?</demo:toUpper>--}%
+
+    %{--<demo:loginLink linkName="Sign In" ></demo:loginLink>--}%
+
 
 
         %{--<br><br>--}%
-
-
-
-
-    %{--<g:form controller="landing" action="radioSearch">--}%
-        %{--<label for="cb">For Rent</label>--}%
-        %{--<g:radio name="cb" value="${project.propertyApp.enums.Enums.PropertyFor.RENT}"></g:radio>--}%
-
-        %{--<label for="cb">For Sale</label>--}%
-        %{--<g:radio name="cb" value="${project.propertyApp.enums.Enums.PropertyFor.SALE}"></g:radio>--}%
-
-        %{--<g:submitButton name="Submit"/>--}%
-    %{--</g:form>--}%
 
     <div class="row">
 
@@ -54,6 +46,8 @@
         <div class="col-md-6">
             <g:render template="/property/showHouse"
                       model="[showHouseList: project.propertyApp.property.House.newHousePosted()]"></g:render>
+
+            %{--<demo:houseList houses="${project.propertyApp.property.House.newHousePosted()}" ></demo:houseList>--}%
         </div>
 
         <div class="col-md-6">
@@ -151,18 +145,34 @@
 
     </g:if>
 
+    <g:if test="${flash.searchLocation}">
+        <g:if test="${houseByLocation || officeByLocation}">
+            <h4 style="color: #00a8ff" class="bold">Search Result</h4>
+
+            <div class="col-md-6">
+                <g:render template="/property/showHouse" model="[showHouseList: houseByLocation]"></g:render>
+            </div>
+
+            <div class="col-md-6">
+                <g:render template="/property/showOffice" model="[showOfficeList: officeByLocation]"></g:render>
+            </div>
+        </g:if>
+        <g:else><h4 style="color: #00a8ff" class="bold">No Result matching search</h4></g:else>
+
+    </g:if>
+
 
 
 <g:if test="${flash.search}">
-    <g:if test="${houseByLocation || officeByLocation}">
+    <g:if test="${houseBySearch || officeBySearch}">
         <h4 style="color: #00a8ff" class="bold">Search Result</h4>
 
         <div class="col-md-6">
-            <g:render template="/property/showHouse" model="[showHouseList: houseByLocation]"></g:render>
+            <g:render template="/property/showHouse" model="[showHouseList: houseBySearch]"></g:render>
         </div>
 
         <div class="col-md-6">
-            <g:render template="/property/showOffice" model="[showOfficeList: officeByLocation]"></g:render>
+            <g:render template="/property/showOffice" model="[showOfficeList: officeBySearch]"></g:render>
         </div>
     </g:if>
     <g:else><h4 style="color: #00a8ff" class="bold">No Result matching search</h4></g:else>

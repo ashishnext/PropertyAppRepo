@@ -70,8 +70,19 @@
             </ul>
         <ul class="nav navbar-nav navbar-left main-nav">
             <li><a href="${createLink(controller: "property", action: "allRentProperties", params: [propertyFor: project.propertyApp.enums.Enums.PropertyFor.RENT])}" class="btn btn-info" >For Rent</a></li>
-            <li><a href="${createLink(controller: "property", action: "allSaleProperties", params: [propertyFor: project.propertyApp.enums.Enums.PropertyFor.SALE])}" class="btn btn-info" >For Sale</a></li>
+            <li><a href="${createLink(controller: "property", action: "allSaleProperties", params: [propertyFor: project.propertyApp.enums.Enums.PropertyFor.SALE])}" class="btn btn-info" >For Sale</a></li> &nbsp; &nbsp;
         </ul>
+
+
+
+        <g:form class="navbar-form" role="search" controller="property" action="searchByLocation" >
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Location" name="searchLocation" id="searchLocation">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+        </g:form>
 
         </div>
 

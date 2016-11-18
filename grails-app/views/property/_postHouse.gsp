@@ -1,8 +1,8 @@
 <%@ page import="project.propertyApp.property.House" %>
-<h4 class="heading bold">Post House For Rent/SALE</h4><br>
+%{--<h4 class="heading bold">Post House For Rent/SALE</h4><br>--}%
 %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
-<g:form action="updateHouse" params="[houseId: houseCO?.id ]" method="post">
+%{--<g:form action="updateHouse" params="[houseId: houseCO?.id ]" method="post">--}%
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -118,6 +118,65 @@
         </div>
     </g:hasErrors>
 
+<div class="form-group row">
+    <label for="example-text-input4" class="col-xs-2 col-form-label">No. of Balconies</label>
+
+    <div class="col-xs-10">
+        <g:textField placeholder="Balconies in house" class="form-control" id="example-text-input4"
+                     name="numOfBalconies" value="${houseCO?.numOfBalconies}"/>
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="numOfBalconies">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="numOfBalconies">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+<div class="form-group row">
+    <label for="example-text-input4" class="col-xs-2 col-form-label">Phone No.</label>
+
+    <div class="col-xs-10">
+        <g:textField placeholder="Enter Phone No." class="form-control" id="example-text-input4"
+                     name="phoneNum" value="${houseCO?.phoneNum}"/>
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="phoneNum">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="phoneNum">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+<div class="form-group row">
+    <label for="example-text-input" class="col-xs-2 col-form-label">Furnished</label>
+
+    <div class="col-xs-3">
+        %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+        <g:select name="furnished"
+                  from="${['True', 'False']}"
+                  noSelection="['': 'Select']" value="${houseCO?.furnished}"></g:select>
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="furnished">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="furnished">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
     <div class="form-group row">
         <label for="example-text-input" class="col-xs-2 col-form-label">Property For</label>
 
@@ -139,14 +198,16 @@
         </div>
     </g:hasErrors>
 
+<input type="file" name="photoHouse" id="photoHouse" value="Choose Photo"><br>
 
-    <g:hiddenField name="id" value="${houseCOId?.id}"></g:hiddenField>
 
-    <g:hiddenField name="id2" value="${houseCOId?.id2}"></g:hiddenField>
+<g:hiddenField name="id" value="${houseCO?.id}"/>
 
-    <div class="form-group row">
+%{--<g:hiddenField name="id2" value="${houseCOId?.id2}"></g:hiddenField>--}%
 
-            <g:submitButton name="Update"></g:submitButton>
+%{--<div class="form-group row">--}%
 
-    </div>
-</g:form>
+%{--<g:submitButton name="Update"></g:submitButton>--}%
+
+%{--</div>--}%
+%{--</g:form>--}%

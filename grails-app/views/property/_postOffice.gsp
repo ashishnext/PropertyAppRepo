@@ -1,7 +1,4 @@
-<h4 class="heading bold">Post Office For Rent/SALE</h4><br>
-%{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
-<g:form action="updateOffice" params="[officeId: officeCO?.id]" method="post">
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -96,6 +93,24 @@
     </g:hasErrors>
 
     <div class="form-group row">
+        <label for="example-text-input4" class="col-xs-2 col-form-label">Phone No.</label>
+
+        <div class="col-xs-10">
+            <g:textField placeholder="Enter Phone No." class="form-control" type="text" id="example-text-input7"
+                         name="phoneNum" value="${officeCO?.phoneNum}"/>
+        </div>
+    </div>
+    <g:hasErrors bean="${officeCO}" field="phoneNum">
+        <div class="alert alert-danger">
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="phoneNum">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
+        </div>
+    </g:hasErrors>
+
+    <div class="form-group row">
         <label for="example-text-input" class="col-xs-2 col-form-label">Parking Facility</label>
 
         <div class="col-xs-3">
@@ -108,6 +123,25 @@
         <div class="alert alert-danger">
             <ul class="errors">
                 <g:eachError bean="${officeCO}" field="parkingFacility">
+                    <li>${it.defaultMessage}</li>
+                </g:eachError>
+            </ul>
+        </div>
+    </g:hasErrors>
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Lift Facility</label>
+
+        <div class="col-xs-3">
+            %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+            <g:select name="liftAvailable" from="['True', 'False']"
+                      noSelection="['': 'Select']" value="${officeCO?.liftAvailable}"></g:select>
+        </div>
+    </div>
+    <g:hasErrors bean="${officeCO}" field="liftAvailable">
+        <div class="alert alert-danger">
+            <ul class="errors">
+                <g:eachError bean="${officeCO}" field="liftAvailable">
                     <li>${it.defaultMessage}</li>
                 </g:eachError>
             </ul>
@@ -134,16 +168,6 @@
         </div>
     </g:hasErrors>
 
-    <g:hiddenField name="id"></g:hiddenField>
+    <input type="file" name="photoOffice" id="photo" value="Photo"><br>
 
-    <div class="form-group row">
-        %{--<label for="example-text-input4" class="col-xs-2 col-form-label">Price</label>--}%
-        %{--<div class="col-xs-10">--}%
-        %{--<input class="form-control" type="text" value="In sqfeet" id="example-text-input4" name="price">--}%
-
-
-        <g:submitButton name="Update"></g:submitButton>
-
-        %{--</div>--}%
-    </div>
-</g:form>
+    <g:hiddenField name="id" value="${officeCO?.id}"></g:hiddenField>

@@ -1,6 +1,8 @@
 package project.propertyApp.property
 
 import grails.plugin.springsecurity.annotation.Secured
+import org.springframework.web.multipart.MultipartHttpServletRequest
+import org.springframework.web.multipart.commons.CommonsMultipartFile
 import project.propertyApp.cmdObjs.HouseCO
 import project.propertyApp.cmdObjs.OfficeCO
 import project.propertyApp.enums.Enums
@@ -18,12 +20,15 @@ class PropertyController {
     }
 
     def saveHouse(HouseCO houseCO) {
+//        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest) request
 
-        if (houseCO.validate()) {
+        CommonsMultipartFile file = params.photoHouse
 
-            propertyService.saveHouseMethod(houseCO)
+        Boolean b = propertyService.saveHouseMethod(houseCO, file)
+        if (b) {
             redirect(controller: "landing", action: "home")
         } else {
+
             houseCO.errors.allErrors.each { println(it) }
             render(view: "postProperty", model: [houseCO: houseCO])
         }
@@ -31,11 +36,12 @@ class PropertyController {
     }
 
     def saveOffice(OfficeCO officeCO) {
+//        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest) request
 
+        def file = request.getFile('photoOffice')
+        Boolean b = propertyService.saveOfficeMethod(officeCO, file)
 
-        if (officeCO.validate()) {
-
-            propertyService.saveOfficeMethod(officeCO)
+        if (b) {
             redirect(controller: "landing", action: "home")
         } else {
             officeCO.errors.allErrors.each { println(it) }
@@ -96,16 +102,32 @@ class PropertyController {
         }
 
         def c1 = Office.createCriteria()
-        List<House> results1 = c1.list() {
+        List<Office> results1 = c1.list() {
             ilike("location", params.searchLocation)
             between("price", priceRange[0] as Long, priceRange[1] as Long)
             eq("propertyFor", params.propertyFor as Enums.PropertyFor)
         }
 
         flash.search = "Search Result"
-        render(view: "/landing/home", model: [houseByLocation: results, officeByLocation: results1])
+        render(view: "/landing/home", model: [houseBySearch: results, officeBySearch: results1])
 
-//        render(view: "/landing/home", model: [houseByLocation:results, officeByLocation:results1])
+
+    }
+
+    @Secured('IS_AUTHENTICATED_ANONYMOUSLY')
+    def searchByLocation() {
+        def c = House.createCriteria()
+        List<House> results = c.list() {
+            ilike("location", params.searchLocation)
+        }
+
+        def c1 = Office.createCriteria()
+        List<Office> results1 = c1.list() {
+            ilike("location", params.searchLocation)
+        }
+
+        flash.searchLocation = "Search Result"
+        render(view: "/landing/home", model: [houseByLocation: results, officeByLocation: results1])
     }
 
     def editHouse() {
@@ -116,15 +138,20 @@ class PropertyController {
 
     def updateHouse(HouseCO houseCO) {
 
-        houseCO.id = params.houseId
+        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest) request
+        def file = mpr.getFile('photoHouse')
 
-        if (houseCO.validate()) {
-            propertyService.updateHouseMethod(houseCO, params.houseId)
+        houseCO.id = params.id as Long
+
+        Boolean b = propertyService.updateHouseMethod(houseCO, houseCO.id, file)
+
+        if (b) {
+
             flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 
         } else {
-            houseCO.errors.allErrors.each { println(it) }
+            houseCO.errors.each { println(it) }
             render(view: "editHouse", model: [houseCO: houseCO])
         }
     }
@@ -135,11 +162,14 @@ class PropertyController {
     }
 
     def updateOffice(OfficeCO officeCO) {
+        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest) request
+        def file = mpr.getFile('photoHouse')
 
-        officeCO.id = params.officeId
+        officeCO.id = params.id as Long
 
-        if (officeCO.validate()) {
-            propertyService.updateOfficeMethod(officeCO, params.officeId)
+        Boolean b = propertyService.updateOfficeMethod(officeCO, officeCO.id, file)
+
+        if (b) {
             flash.message = "Your post is updated successfully"
             redirect(action: "myPosts")
 

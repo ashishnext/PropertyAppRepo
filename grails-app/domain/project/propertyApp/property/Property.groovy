@@ -6,16 +6,20 @@ import project.propertyApp.person.Person
 class Property {
     String location
     String address
-    Integer pincode
+    String pincode
     Integer area
     Long price
     Enums.PropertyFor propertyFor
     Date dateCreated
     Date lastUpdated
+    String photoLocation
+    String phoneNum
 
     static belongsTo = [person: Person]
 
     static constraints = {
+        photoLocation nullable: true
+
 
     }
 
