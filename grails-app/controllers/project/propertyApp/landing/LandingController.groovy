@@ -24,22 +24,23 @@ class LandingController {
         Person person=(springSecurityService.currentUser)
         def file = new File(person.photoLocation)
         def img = file.bytes
-        response.contentType='image/*' // or the appropriate image content type
-        response.outputStream << img
-        response.outputStream.flush()
+        showImage(img)
     }
 
     def homeImage() {
-        def file = new File("/home/ashish/Desktop/burj_khalifa.jpg")
+        def file = new File("/home/ashish/Desktop/mumbai-coastline.jpg")
         def img = file.bytes
-        response.contentType='image/*' // or the appropriate image content type
-        response.outputStream << img
-        response.outputStream.flush()
+        showImage(img)
+
     }
 
     def propertyImage() {
         def file = new File(params.photoLocation)
         def img = file.bytes
+        showImage(img)
+    }
+
+    def showImage(byte[] img) {
         response.contentType='image/*' // or the appropriate image content type
         response.outputStream << img
         response.outputStream.flush()

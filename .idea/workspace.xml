@@ -16,9 +16,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService$_myPostsMethod_closure4.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService$_saveHouseMethod_closure2.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService$_saveOfficeMethod_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/LinkedProperties.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/ListEnumeration.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure4_closure10.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure4_closure10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
@@ -26,6 +29,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/User.class" afterPath="$PROJECT_DIR$/target/classes/com/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/UserRole.class" afterPath="$PROJECT_DIR$/target/classes/com/UserRole.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/person/PersonService.class" afterPath="$PROJECT_DIR$/target/classes/person/PersonService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/DemoTagLib.class" afterPath="$PROJECT_DIR$/target/classes/project/DemoTagLib.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/HouseCO$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/HouseCO$__clinit__closure1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/HouseCO.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/HouseCO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/OfficeCO$__clinit__closure1.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/cmdObjs/OfficeCO$__clinit__closure1.class" />
@@ -48,13 +52,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allRentProperties_closure4.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allRentProperties_closure4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allSaleProperties_closure5.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allSaleProperties_closure5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allSaleProperties_closure6.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_allSaleProperties_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_saveHouse_closure1.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_saveHouse_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_saveOffice_closure2.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_saveOffice_closure2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_search_closure7.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_search_closure7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_search_closure8.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController$_search_closure8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController.class" afterPath="$PROJECT_DIR$/target/classes/project/propertyApp/property/PropertyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService$_updateHouseMethod_closure5.class" afterPath="$PROJECT_DIR$/target/classes/property/PropertyService$_updateHouseMethod_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService$_updateOfficeMethod_closure6.class" afterPath="$PROJECT_DIR$/target/classes/property/PropertyService$_updateOfficeMethod_closure6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/property/PropertyService.class" afterPath="$PROJECT_DIR$/target/classes/property/PropertyService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" />
@@ -168,7 +168,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" />
@@ -181,11 +180,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/editHouse.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/editHouse.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/editOffice.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/editOffice.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/property/postProperty.gsp" afterPath="$PROJECT_DIR$/grails-app/views/property/postProperty.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy" afterPath="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy" afterPath="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy" afterPath="$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
     <ignored path="PropertyApp.iws" />
@@ -217,43 +216,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PropertyController.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PropertyController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2757353">
-              <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
-              <folding>
-                <element signature="e#38#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/landing/home.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3469386">
-              <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/app.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="79" column="126" selection-start-line="79" selection-start-column="126" selection-end-line="79" selection-end-column="126" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_showHouse.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -263,45 +230,10 @@
         <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding>
                 <element signature="e#37#74#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OfficeCO.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-              <folding>
-                <element signature="e#37#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyService.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -309,18 +241,81 @@
       <file leaf-file-name="_postHouse.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3265305">
-              <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="249" column="37" selection-start-line="249" selection-start-column="37" selection-end-line="249" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_showOffice.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp">
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.877551">
-              <caret line="27" column="111" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="House.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyService.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LandingController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myPosts.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.5130112">
+              <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="147" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/app.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/landing/home.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -343,7 +338,6 @@
         <option value="$PROJECT_DIR$/grails-app/views/landing/demo.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/LandingController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/landing/check.gsp" />
-        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy" />
         <option value="$PROJECT_DIR$/web-app/css/theme/cardio.css" />
         <option value="$PROJECT_DIR$/grails-app/views/property/house.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/_sideBar.gsp" />
@@ -354,28 +348,30 @@
         <option value="$PROJECT_DIR$/grails-app/views/landing/login.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/person/PersonService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/taglib/project/DemoTagLib.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/editHouse.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/property/editOffice.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/postProperty.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/app.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/landing/home.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/postProperty.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Amenities.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp" />
-        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/landing/home.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/property/myPosts.gsp" />
       </list>
     </option>
   </component>
@@ -396,9 +392,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -425,8 +421,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -971,19 +965,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LinkshareRepo" />
-    <property name="SearchEverywhereHistoryKey" value="Prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;OfficeC&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy&#10;app&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/layouts/app.gsp&#10;home&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/landing/home.gsp&#10;propert&#9;null&#9;null&#10;Office&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;office&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;Propert&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;officeco&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy&#10;housec&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy&#10;House&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy&#10;Off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;hous&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;_&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/property/_postHouse.gsp&#10;Regis&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy&#10;conf&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/BuildConfig.groovy&#10;message&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;house&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;messages.p&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;url&#9;null&#9;null&#10;offic&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;property&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;offi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/web-app/fonts/eleganticons/ElegantIcons.woff&#10;defau&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/target/work/plugins/spring-security-core-2.0.0/grails-app/conf/DefaultSecurityConfig.groovy&#10;confi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/Config.groovy&#10;prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;person&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/person/Person.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="url&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/UrlMappings.groovy&#10;House&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;home&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/landing/home.gsp&#10;app&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/layouts/app.gsp&#10;Enums&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/enums/Enums.groovy&#10;Offi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy&#10;Prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;OfficeC&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy&#10;propert&#9;null&#9;null&#10;Office&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;office&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;Propert&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;officeco&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy&#10;housec&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy&#10;Off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;hous&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;_&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/views/property/_postHouse.gsp&#10;Regis&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/src/groovy/project/propertyApp/cmdObjs/RegistrationCO.groovy&#10;conf&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/BuildConfig.groovy&#10;message&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;house&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/House.groovy&#10;messages.p&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/i18n/messages.properties&#10;offic&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;property&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/controllers/project/propertyApp/property/PropertyController.groovy&#10;offi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Office.groovy&#10;off&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/web-app/fonts/eleganticons/ElegantIcons.woff&#10;defau&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/target/work/plugins/spring-security-core-2.0.0/grails-app/conf/DefaultSecurityConfig.groovy&#10;confi&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/conf/Config.groovy&#10;prop&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/property/Property.groovy&#10;person&#9;FILE&#9;file:///home/ashish/newProj/PropertyApp/grails-app/domain/project/propertyApp/person/Person.groovy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1443,40 +1439,48 @@
       <workItem from="1479454438459" duration="9148000" />
       <workItem from="1479469027555" duration="4935000" />
       <workItem from="1479476124359" duration="3666000" />
+      <workItem from="1479481316806" duration="1761000" />
+      <workItem from="1479491806448" duration="4667000" />
+      <workItem from="1479550883313" duration="5594000" />
+      <workItem from="1479558760793" duration="13548000" />
+      <workItem from="1479624668484" duration="2524000" />
+      <workItem from="1479635721153" duration="6734000" />
+      <workItem from="1479654642608" duration="4749000" />
+      <workItem from="1479709685351" duration="566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226636000" />
+    <option name="totallyTimeSpent" value="266779000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02782071" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03387097" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0048387097" sideWeight="0.5091633" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24541833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21638331" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25816733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21612903" sideWeight="0.49083665" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1505,13 +1509,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/landing/demo.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1631,24 +1628,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/_sideBar.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1718,22 +1701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.040816326">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.4">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/person/PersonController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1752,50 +1719,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/person/Person.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4107144">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/editOffice.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="143" column="68" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1810,16 +1747,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/property/postProperty.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8163266">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Amenities.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/enums/Enums.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <marker date="1479636472551" expanded="true" signature="1080:1159" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postOffice.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Office.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.482143">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showHouse.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7959185">
+          <caret line="40" column="102" selection-start-line="40" selection-start-column="102" selection-end-line="40" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3265307">
+          <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/app.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/landing/home.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
           <folding />
         </state>
       </provider>
@@ -1827,81 +1847,69 @@
     <entry file="file://$PROJECT_DIR$/grails-app/services/property/PropertyService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_showOffice.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.877551">
-          <caret line="27" column="111" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/landing/home.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3469386">
-          <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/Property.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/app.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="79" column="126" selection-start-line="79" selection-start-column="126" selection-end-line="79" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3265305">
-          <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#37#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/OfficeCO.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#37#74#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/property/PropertyController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2757353">
-          <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/project/propertyApp/property/House.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/project/propertyApp/cmdObjs/HouseCO.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
-            <element signature="e#38#92#0" expanded="true" />
+            <element signature="e#37#74#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/_postHouse.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="37" selection-start-line="249" selection-start-column="37" selection-end-line="249" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/project/propertyApp/landing/LandingController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/property/myPosts.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5130112">
+          <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="147" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

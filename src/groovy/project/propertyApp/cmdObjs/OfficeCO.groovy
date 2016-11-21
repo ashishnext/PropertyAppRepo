@@ -15,8 +15,12 @@ class OfficeCO {
     String parkingFacility
     Long id
     byte[] officePhoto
-    String liftAvailable
     String phoneNum
+    Enums.Possession possession
+    Enums.OfficeType officeType
+    String amenities
+
+  //  Boolean lift, waterStorage, atm, conferenceRoom, gym
 
     static constraints= {
         id nullable: true

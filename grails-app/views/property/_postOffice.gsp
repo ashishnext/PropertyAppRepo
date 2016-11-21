@@ -1,5 +1,25 @@
 
 
+<div class="form-group row">
+    <label for="example-text-input" class="col-xs-2 col-form-label">Office Type</label>
+
+    <div class="col-xs-3">
+        %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+        <g:select name="officeType"
+                  from="${project.propertyApp.enums.Enums.OfficeType.officeTypeList()}"
+                  noSelection="['': 'Select']" value="${officeCO?.officeType}"></g:select>
+    </div>
+</div>
+<g:hasErrors bean="${officeCO}" field="officeType">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${officeCO}" field="officeType">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
 
@@ -92,23 +112,46 @@
         </div>
     </g:hasErrors>
 
-    <div class="form-group row">
-        <label for="example-text-input4" class="col-xs-2 col-form-label">Phone No.</label>
+<div class="form-group row">
+    <label for="example-text-input4" class="col-xs-2 col-form-label">Phone No.</label>
 
-        <div class="col-xs-10">
-            <g:textField placeholder="Enter Phone No." class="form-control" type="text" id="example-text-input7"
-                         name="phoneNum" value="${officeCO?.phoneNum}"/>
-        </div>
+    <div class="col-xs-10">
+        <g:textField placeholder="Enter Phone No." class="form-control" type="text" id="example-text-input7"
+                     name="phoneNum" value="${officeCO?.phoneNum}"/>
     </div>
-    <g:hasErrors bean="${officeCO}" field="phoneNum">
-        <div class="alert alert-danger">
-            <ul class="errors">
-                <g:eachError bean="${officeCO}" field="phoneNum">
-                    <li>${it.defaultMessage}</li>
-                </g:eachError>
-            </ul>
-        </div>
-    </g:hasErrors>
+</div>
+<g:hasErrors bean="${officeCO}" field="phoneNum">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${officeCO}" field="phoneNum">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+
+<div class="form-group row">
+    <label for="example-text-input" class="col-xs-2 col-form-label">Possession</label>
+
+    <div class="col-xs-3">
+        %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+        <g:select name="possession"
+                  from="${project.propertyApp.enums.Enums.Possession.possessionList()}"
+                  noSelection="['': 'Select']" value="${officeCO?.possession}"></g:select>
+    </div>
+</div>
+<g:hasErrors bean="${officeCO}" field="possession">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${officeCO}" field="possession">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+
 
     <div class="form-group row">
         <label for="example-text-input" class="col-xs-2 col-form-label">Parking Facility</label>
@@ -130,18 +173,17 @@
     </g:hasErrors>
 
     <div class="form-group row">
-        <label for="example-text-input" class="col-xs-2 col-form-label">Lift Facility</label>
+        <label for="example-text-input" class="col-xs-2 col-form-label">Amenities</label>
 
         <div class="col-xs-3">
-            %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
-            <g:select name="liftAvailable" from="['True', 'False']"
-                      noSelection="['': 'Select']" value="${officeCO?.liftAvailable}"></g:select>
+            <g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"
+                      multiple="true" value="${officeCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>
         </div>
     </div>
-    <g:hasErrors bean="${officeCO}" field="liftAvailable">
+    <g:hasErrors bean="${officeCO}" field="amenities">
         <div class="alert alert-danger">
             <ul class="errors">
-                <g:eachError bean="${officeCO}" field="liftAvailable">
+                <g:eachError bean="${officeCO}" field="amenities">
                     <li>${it.defaultMessage}</li>
                 </g:eachError>
             </ul>
@@ -168,6 +210,9 @@
         </div>
     </g:hasErrors>
 
-    <input type="file" name="photoOffice" id="photo" value="Photo"><br>
+<div class="form-group row">
+       <label for="example-text-input" class="col-xs-2 col-form-label">Photo</label>
+   <input type="file" name="photoOffice" id="photo" value="Photo"><br>
+</div>
 
     <g:hiddenField name="id" value="${officeCO?.id}"></g:hiddenField>

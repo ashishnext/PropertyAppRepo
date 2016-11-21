@@ -1,8 +1,33 @@
 <%@ page import="project.propertyApp.property.House" %>
+<%@ page import="project.propertyApp.enums.Enums"%>
+
 %{--<h4 class="heading bold">Post House For Rent/SALE</h4><br>--}%
 %{--<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>--}%
 
 %{--<g:form action="updateHouse" params="[houseId: houseCO?.id ]" method="post">--}%
+
+<div class="form-group row">
+    <label for="example-text-input" class="col-xs-2 col-form-label">House Type</label>
+
+    <div class="col-xs-3">
+        %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+        <g:select name="houseType"
+                  from="${project.propertyApp.enums.Enums.HouseType.houseTypeList()}"
+                  noSelection="['': 'Select']" value="${houseCO?.houseType}"></g:select>
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="houseType">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="houseType">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+
 
     <div class="form-group row">
         <label for="example-text-input4" class="col-xs-2 col-form-label">Location</label>
@@ -118,6 +143,7 @@
         </div>
     </g:hasErrors>
 
+
 <div class="form-group row">
     <label for="example-text-input4" class="col-xs-2 col-form-label">No. of Balconies</label>
 
@@ -157,12 +183,71 @@
 </g:hasErrors>
 
 <div class="form-group row">
+    <label for="example-text-input" class="col-xs-2 col-form-label">Possession</label>
+
+    <div class="col-xs-3">
+        %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
+        <g:select name="possession"
+                  from="${project.propertyApp.enums.Enums.Possession.possessionList()}"
+                  noSelection="['': 'Select']" value="${houseCO?.possession}"></g:select>
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="possession">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="possession">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+
+<div class="form-group row">
+    <label for="example-text-input4" class="col-xs-2 col-form-label">Amenities</label>
+
+    <div class="col-xs-10">
+
+        %{--<label class="checkbox-inline"><g:checkBox name="lift" value="${houseCO?.lift}" checked="${houseCO?.lift=='true'}"/>Lift</label>--}%
+        %{--<label class="checkbox-inline"><g:checkBox name="waterStorage" value="${houseCO?.waterStorage }" checked="${houseCO?.waterStorage=='true'}"/>Water Storage</label>--}%
+        %{--<label class="checkbox-inline"><g:checkBox name="atm" value="${houseCO?.atm}" checked="${houseCO?.atm=='true'}" />ATM</label><br>--}%
+        %{--<label class="checkbox-inline"><g:checkBox name="conferenceRoom" value="${houseCO?.conferenceRoom}" checked="${houseCO?.conferenceRoom=='true'}"/>Conference Room</label>--}%
+        %{--<label class="checkbox-inline"><g:checkBox name="gym" value="${houseCO?.gym}" checked="${houseCO?.gym=='true'}"/>Gym</label>--}%
+
+
+    %{--<label class="checkbox-inline">< name="lift"/>Lift</label>--}%
+    %{--<label class="checkbox-inline"><checkBox name="waterStorage"/>Water Storage</label>--}%
+    %{--<label class="checkbox-inline"><checkBox name="atm"/>ATM</label><br>--}%
+    %{--<label class="checkbox-inline"><checkBox name="conferenceRoom" />Conference Room</label>--}%
+    %{--<label class="checkbox-inline"><checkBox name="gym" />Gym</label>--}%
+
+        <g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"
+                  multiple="true" value="${houseCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>
+
+    </div>
+</div>
+
+<g:hasErrors bean="${houseCO}" field="amenities">
+    <div class="alert alert-danger">
+        <ul class="errors">
+            <g:eachError bean="${houseCO}" field="amenities">
+                <li>${it.defaultMessage}</li>
+            </g:eachError>
+        </ul>
+    </div>
+</g:hasErrors>
+
+
+
+
+<div class="form-group row">
     <label for="example-text-input" class="col-xs-2 col-form-label">Furnished</label>
 
     <div class="col-xs-3">
         %{--<input class="form-control" type="text" value="Rooms in house" id="example-text-input" name="rooms">--}%
         <g:select name="furnished"
-                  from="${['True', 'False']}"
+                  from="${['true', 'false']}"
                   noSelection="['': 'Select']" value="${houseCO?.furnished}"></g:select>
     </div>
 </div>
@@ -198,7 +283,11 @@
         </div>
     </g:hasErrors>
 
+<div class="form-group row">
+       <label for="example-text-input" class="col-xs-2 col-form-label">Photo</label>
+
 <input type="file" name="photoHouse" id="photoHouse" value="Choose Photo"><br>
+</div>
 
 
 <g:hiddenField name="id" value="${houseCO?.id}"/>
@@ -207,7 +296,7 @@
 
 %{--<div class="form-group row">--}%
 
-%{--<g:submitButton name="Update"></g:submitButton>--}%
+%{--<g:submitButton name="Update"></++dfg:submitButton>--}%
 
 %{--</div>--}%
 %{--</g:form>--}%

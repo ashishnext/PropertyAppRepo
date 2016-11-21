@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
 
-                            <img style="height:400px;width:1280px;"src="${createLink(controller: "landing", action: "homeImage")}"/>
+                            <img style="height:450px;width:1280px;"src="${createLink(controller: "landing", action: "homeImage")}"/>
                             <h2 class="blue">Property App</h2>
 
                             <h3 class=" typed">One place for all your property related issues</h3>

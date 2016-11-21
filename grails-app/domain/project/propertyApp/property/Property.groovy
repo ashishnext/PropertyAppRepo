@@ -14,13 +14,15 @@ class Property {
     Date lastUpdated
     String photoLocation
     String phoneNum
+    Enums.Possession possession
+    String amenities
+
+   // static  hasOne = [amenities: Amenities]
 
     static belongsTo = [person: Person]
 
     static constraints = {
         photoLocation nullable: true
-
-
     }
 
     static mapping = {
