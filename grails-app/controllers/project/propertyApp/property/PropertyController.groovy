@@ -162,8 +162,8 @@ class PropertyController {
     }
 
     def updateOffice(OfficeCO officeCO) {
-        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest) request
-        def file = mpr.getFile('photoHouse')
+        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest)request
+        def file = mpr.getFile('photoOffice')
 
         officeCO.id = params.id as Long
 

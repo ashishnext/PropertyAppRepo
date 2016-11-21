@@ -9,6 +9,9 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
 
+                            <p class="bold"><span
+                                    class="1 blue">Office Type -</span> <span>${hl.officeType}</span></p>
+
                             <img style="height:300px;width:500px;"
                                  src="${createLink(controller: "landing", action: "propertyImage", params: [photoLocation: hl.photoLocation])}"/>
 
@@ -25,8 +28,11 @@
                                     class="2 blue">Price -</span>  <span>${hl.price}</span></p>
 
                             <p class="bold"><span
-                                    class="1 blue">Lift Facility -</span>  <span>${hl.liftAvailable}</span> &nbsp; &nbsp; <span
+                                    class="1 blue">Possession - </span>  <span>${hl.possession}</span> &nbsp; &nbsp; <span
                                     class="2 blue"></span>  <span></span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Amenities -</span> <span>${hl.amenities}</span></p>
 
                             <p class="bold"><span
                                     class="1 blue">Posted By -</span> <span>${hl.person.name}</span> &nbsp; &nbsp; <span

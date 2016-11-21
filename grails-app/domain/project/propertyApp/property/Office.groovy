@@ -1,15 +1,17 @@
 package project.propertyApp.property
 
+import project.propertyApp.enums.Enums
+
 class Office extends Property {
     Boolean parkingFacility
-    Boolean liftAvailable
+    Enums.OfficeType officeType
 
     static constraints = {
     }
 
     static List<Office> newOfficePosted() {
         def c=Office.createCriteria()
-        List<Office> results=c.list(max: 5) {
+        List<Office> results=c.list() {
             order("dateCreated", "desc")
         }
         return results

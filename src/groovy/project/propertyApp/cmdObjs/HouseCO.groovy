@@ -15,9 +15,17 @@ class HouseCO {
     String rooms
     Long id
     byte[] housePhoto
-    String furnished
+    Boolean furnished
     Integer numOfBalconies
     String phoneNum
+    Enums.Possession possession
+    Enums.HouseType houseType
+    String amenities
+//    Boolean lift
+//    Boolean waterStorage
+//    Boolean atm
+//    Boolean conferenceRoom
+//    Boolean gym
 
 
     static constraints= {
@@ -26,6 +34,11 @@ class HouseCO {
         id nullable: true
         housePhoto nullable: true
         phoneNum size: 1..10
+//        lift nullable: true, bindable: true
+//        waterStorage nullable: true, bindable: true
+//        atm nullable: true, bindable: true
+//        conferenceRoom nullable: true, bindable: true
+//        gym nullable: true, bindable: true
 
     }
 

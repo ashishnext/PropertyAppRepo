@@ -5,6 +5,7 @@ import org.springframework.web.multipart.MultipartFile
 import project.propertyApp.cmdObjs.HouseCO
 import project.propertyApp.cmdObjs.OfficeCO
 import project.propertyApp.person.Person
+import project.propertyApp.property.Amenities
 import project.propertyApp.property.House
 import project.propertyApp.property.Office
 
@@ -33,7 +34,9 @@ class PropertyService {
             Person person = springSecurityService.currentUser
             House house = new House(
                     location: co.location, address: co.address, pincode: co.pincode, rooms: co.rooms, area: co.area,
-                    price: co.price, propertyFor: co.propertyFor, person: person, photoLocation: photoLocation, furnished: co.furnished, numOfBalconies: co.numOfBalconies, phoneNum: co.phoneNum
+                    price: co.price, propertyFor: co.propertyFor, person: person, photoLocation: photoLocation,
+                    furnished: co.furnished, numOfBalconies: co.numOfBalconies, phoneNum: co.phoneNum,
+                    possession: co.possession, houseType: co.houseType, amenities: co.amenities
             )
             person.addToProps(house).save(failOnError: true, flush: true)
             return true
@@ -53,7 +56,9 @@ class PropertyService {
 
             Person person = springSecurityService.currentUser
             Office office = new Office(location: co.location, address: co.address, pincode: co.pincode, parkingFacility: co.parkingFacility, area: co.area,
-                    price: co.price, propertyFor: co.propertyFor, person: person, photoLocation: photoLocation, liftAvailable: co.liftAvailable, phoneNum: co.phoneNum).save(flush: true, failOnError: true)
+                    price: co.price, propertyFor: co.propertyFor, person: person, photoLocation: photoLocation, phoneNum: co.phoneNum,
+                    possession: co.possession, officeType: co.officeType, amenities: co.amenities)
+
             person.addToProps(office).save(failOnError: true, flush: true)
 
             return true
@@ -77,9 +82,12 @@ class PropertyService {
             house.area = houseCO.area
             house.price = houseCO.price
             house.propertyFor = houseCO.propertyFor
-            house.furnished = houseCO.numOfBalconies
+            house.furnished = houseCO.furnished
             house.numOfBalconies = houseCO.numOfBalconies
             house.phoneNum = houseCO.phoneNum
+            house.possession = houseCO.possession
+            house.houseType = houseCO.houseType
+            house.amenities = houseCO.amenities
 
             house.save(failOnError: true, flush: true)
 
@@ -94,6 +102,7 @@ class PropertyService {
         if (officeCO.validate()) {
 
             String photoLocation = getPhotoLocation(file)
+
             Office office = Office.findById(officeId)
             office.parkingFacility = officeCO.parkingFacility
             office.address = officeCO.address
@@ -102,8 +111,10 @@ class PropertyService {
             office.area = officeCO.area
             office.price = officeCO.price
             office.propertyFor = officeCO.propertyFor
-            office.liftAvailable = officeCO.liftAvailable
             office.phoneNum = officeCO.phoneNum
+            office.possession = officeCO.possession
+            office.officeType = officeCO.officeType
+            office.amenities = officeCO.amenities
 
             office.save(failOnError: true, flush: true)
             return true

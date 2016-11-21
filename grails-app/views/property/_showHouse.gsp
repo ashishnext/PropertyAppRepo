@@ -12,6 +12,9 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
 
+                            <p class="bold"><span
+                                    class="1 blue">House Type -</span> <span>${hl.houseType}</span></p>
+
                             <img style="height:300px;width:500px;"
                                  src="${createLink(controller: "landing", action: "propertyImage", params: [photoLocation: hl.photoLocation])}"/>
 
@@ -30,6 +33,12 @@
                             <p class="bold"><span
                                     class="1 blue">Furnished -</span>  <span>${hl.furnished}</span> &nbsp; &nbsp; <span
                                     class="2 blue">No. of Baloconies -</span>  <span>${hl.numOfBalconies}</span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Possession -</span> <span>${hl.possession}</span></p>
+
+                            <p class="bold"><span
+                                    class="1 blue">Amenities -</span> <span>${hl.amenities}</span></p>
 
                             <p class="bold"><span
                                     class="1 blue">Posted By -</span> <span>${hl.person.name}</span> &nbsp; &nbsp; <span
