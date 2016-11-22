@@ -175,9 +175,16 @@
     <div class="form-group row">
         <label for="example-text-input" class="col-xs-2 col-form-label">Amenities</label>
 
-        <div class="col-xs-3">
-            <g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"
-                      multiple="true" value="${officeCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>
+        <div class="col-xs-10">
+            %{--<g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"--}%
+                      %{--multiple="true" value="${officeCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>--}%
+
+            <label class="checkbox-inline"><g:checkBox name="lift"/>Lift</label>
+            <label class="checkbox-inline"><g:checkBox name="waterStorage"/>Water Storage</label>
+            <label class="checkbox-inline"><g:checkBox name="atm"/>ATM</label><br>
+            <label class="checkbox-inline"><g:checkBox name="conferenceRoom" />Conference Room</label>
+            <label class="checkbox-inline"><g:checkBox name="gym" />Gym</label>
+
         </div>
     </div>
     <g:hasErrors bean="${officeCO}" field="amenities">

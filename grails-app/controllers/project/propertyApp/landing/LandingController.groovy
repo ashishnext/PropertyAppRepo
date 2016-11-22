@@ -15,6 +15,10 @@ class LandingController {
 
     }
 
+    def demo() {
+
+    }
+
     def home() {
         flash.home="All properties posted"
     }
@@ -40,7 +44,7 @@ class LandingController {
         showImage(img)
     }
 
-    def showImage(byte[] img) {
+    def showImage(def img) {
         response.contentType='image/*' // or the appropriate image content type
         response.outputStream << img
         response.outputStream.flush()

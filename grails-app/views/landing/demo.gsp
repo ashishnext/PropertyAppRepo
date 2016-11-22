@@ -1,475 +1,557 @@
-<!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cardio: Free One Page Template by Luka Cvetinovic</title>
-    <meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
-    <meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
-    <meta name="author" content="Luka Cvetinovic for Codrops" />
-    <!-- Favicons (created with http://realfavicongenerator.net/)-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00a8ff">
-    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Normalize -->
-    %{--<link rel="stylesheet" type="text/css" href="css/normalize.css">--}%
-    %{--<!-- Bootstrap -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">--}%
-    %{--<!-- Owl -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="css/owl.css">--}%
-    %{--<!-- Animate.css -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="css/animate.css">--}%
-    %{--<!-- Font Awesome -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">--}%
-    %{--<!-- Elegant Icons -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">--}%
-    %{--<!-- Main style -->--}%
-    %{--<link rel="stylesheet" type="text/css" href="css/cardio.css">--}%
+    <meta charset="utf-8">
+    <title>Bootstrap Theme by @Graphikaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+    %{--<link rel="stylesheet" href="assets/css/bootstrap.min.css">--}%
+    %{--<link rel="stylesheet" href="assets/css/theme.css">--}%
+    %{--<link rel="stylesheet" href="assets/css/font-awesome.min.css">--}%
+    %{--<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">--}%
 
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'bootstrap.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'custom.min.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'normalize.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'animate.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'cardio.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'et-icons.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'owl.css')}" type="text/css">
-
-
-
+    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'bootstrap.min.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'theme.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'font-awesome.min.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css/theme', file: 'bootstrap-select.min.css')}" type="text/css">
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-%{--<div class="preloader">--}%
-    %{--<img src="img/loader.gif" alt="Preloader image">--}%
-%{--</div>--}%
-<nav class="navbar bg-primary">
+<!-- Main Navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <section class="wrapper-xs bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10">
+                    <i class="fa fa-question-circle"></i> Have any question? Email us at <i class="fa fa-envelope"></i> <a href="#link"><span class="text-light">info@interstatelovesong.com</span></a>
+                </div><!-- /.col -->
+                <div class="col-sm-12 col-md-2">
+                    <ul class="list-inline no-margin-bottom">
+                        <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="text-light fa fa-lg fa-fw fa-pinterest"></i></a></li>
+                    </ul>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.wrapper -->
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-dark.png" alt="Website Logo">
+            </a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-%{--<header id="intro">--}%
-    <div class="container">
-        <div class="table">
-            <div class="header-text">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="light white">Take care of your body.</h3>
-                        <h1 class="white typed">It's the only place you have to live.</h1>
-                        <span class="typed-cursor">|</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-%{--</header>--}%
-<section>
-    <div class="cut cut-top"></div>
-    <div class="container">
-        <div class="row intro-tables">
-            <div class="col-md-4">
-                <div class="intro-table intro-table-first">
-                    <h5 class="white heading">Today's Schedule</h5>
-                    <div class="owl-carousel owl-schedule bottom">
-                        <div class="item">
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Early Exercise</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Muscle Building</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Cardio</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Early Exercise</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Muscle Building</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Cardio</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Early Exercise</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Muscle Building</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                            <div class="schedule-row row">
-                                <div class="col-xs-6">
-                                    <h5 class="regular white">Cardio</h5>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <h5 class="white">8:30 - 10:00</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="intro-table intro-table-hover">
-                    <h5 class="white heading hide-hover">Premium Membership</h5>
-                    <div class="bottom">
-                        <h4 class="white heading small-heading no-margin regular">Register Today</h4>
-                        <h4 class="white heading small-pt">20% Discount</h4>
-                        <a href="#" class="btn btn-white-fill expand">Register</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="intro-table intro-table-third">
-                    <h5 class="white heading">Happy Clients</h5>
-                    <div class="owl-testimonials bottom">
-                        <div class="item">
-                            <h4 class="white heading content">I couldn't be more happy with the results!</h4>
-                            <h5 class="white heading light author">Adam Jordan</h5>
-                        </div>
-                        <div class="item">
-                            <h4 class="white heading content">I can't believe how much better I feel!</h4>
-                            <h5 class="white heading light author">Greg Pardon</h5>
-                        </div>
-                        <div class="item">
-                            <h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
-                            <h5 class="white heading light author">Christina Goldman</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="services" class="section section-padded">
-    <div class="container">
-        <div class="row text-center title">
-            <h2>Services</h2>
-            <h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
-        </div>
-        <div class="row services">
-            <div class="col-md-4">
-                <div class="service">
-                    <div class="icon-holder">
-                        <img src="img/icons/heart-blue.png" alt="" class="icon">
-                    </div>
-                    <h4 class="heading">Cardio Training</h4>
-                    <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service">
-                    <div class="icon-holder">
-                        <img src="img/icons/guru-blue.png" alt="" class="icon">
-                    </div>
-                    <h4 class="heading">Yoga Pilates</h4>
-                    <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service">
-                    <div class="icon-holder">
-                        <img src="img/icons/weight-blue.png" alt="" class="icon">
-                    </div>
-                    <h4 class="heading">Power Training</h4>
-                    <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="cut cut-bottom"></div>
-</section>
-<section id="team" class="section gray-bg">
-    <div class="container">
-        <div class="row title text-center">
-            <h2 class="margin-top">Team</h2>
-            <h4 class="light muted">We're a dream team!</h4>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
-                        <div class="overlay text-center">
-                            <h3 class="white">$69.00</h3>
-                            <h5 class="light light-white">1 - 5 sessions / month</h5>
-                        </div>
-                    </div>
-                    <img src="img/team/team3.jpg" alt="Team Image" class="avatar">
-                    <div class="title">
-                        <h4>Ben Adamson</h4>
-                        <h5 class="muted regular">Fitness Instructor</h5>
-                    </div>
-                    <button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">Sign Up Now</button>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover2.jpg'); background-size:cover;">
-                        <div class="overlay text-center">
-                            <h3 class="white">$69.00</h3>
-                            <h5 class="light light-white">1 - 5 sessions / month</h5>
-                        </div>
-                    </div>
-                    <img src="img/team/team1.jpg" alt="Team Image" class="avatar">
-                    <div class="title">
-                        <h4>Eva Williams</h4>
-                        <h5 class="muted regular">Personal Trainer</h5>
-                    </div>
-                    <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="team text-center">
-                    <div class="cover" style="background:url('img/team/team-cover3.jpg'); background-size:cover;">
-                        <div class="overlay text-center">
-                            <h3 class="white">$69.00</h3>
-                            <h5 class="light light-white">1 - 5 sessions / month</h5>
-                        </div>
-                    </div>
-                    <img src="img/team/team2.jpg" alt="Team Image" class="avatar">
-                    <div class="title">
-                        <h4>John Phillips</h4>
-                        <h5 class="muted regular">Personal Trainer</h5>
-                    </div>
-                    <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="pricing" class="section">
-    <div class="container">
-        <div class="row title text-center">
-            <h2 class="margin-top white">Pricing</h2>
-            <h4 class="light white">Choose your favorite pricing plan and sign up today!</h4>
-        </div>
-        <div class="row no-margin">
-            <div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
-                <div class="pricing">
-                    <div class="box-main active" data-img="img/pricing1.jpg">
-                        <h4 class="white">Yoga Pilates</h4>
-                        <h4 class="white regular light">$850.00 <span class="small-font">/ year</span></h4>
-                        <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-                        <i class="info-icon icon_question"></i>
-                    </div>
-                    <div class="box-second active">
-                        <ul class="white-list text-left">
-                            <li>One Personal Trainer</li>
-                            <li>Big gym space for training</li>
-                            <li>Free tools &amp; props</li>
-                            <li>Free locker</li>
-                            <li>Free before / after shower</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pricing">
-                    <div class="box-main" data-img="img/pricing2.jpg">
-                        <h4 class="white">Cardio Training</h4>
-                        <h4 class="white regular light">$100.00 <span class="small-font">/ year</span></h4>
-                        <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-                        <i class="info-icon icon_question"></i>
-                    </div>
-                    <div class="box-second">
-                        <ul class="white-list text-left">
-                            <li>One Personal Trainer</li>
-                            <li>Big gym space for training</li>
-                            <li>Free tools &amp; props</li>
-                            <li>Free locker</li>
-                            <li>Free before / after shower</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section section-padded blue-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="owl-twitter owl-carousel">
-                    <div class="item text-center">
-                        <i class="icon fa fa-twitter"></i>
-                        <h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-                        <h4 class="light-white light">#health #training #exercise</h4>
-                    </div>
-                    <div class="item text-center">
-                        <i class="icon fa fa-twitter"></i>
-                        <h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-                        <h4 class="light-white light">#health #training #exercise</h4>
-                    </div>
-                    <div class="item text-center">
-                        <i class="icon fa fa-twitter"></i>
-                        <h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-                        <h4 class="light-white light">#health #training #exercise</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content modal-popup">
-            <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
-            <h3 class="white">Sign Up</h3>
-            <form action="" class="popup-form">
-                <input type="text" class="form-control form-white" placeholder="Full Name">
-                <input type="text" class="form-control form-white" placeholder="Email Address">
-                <div class="dropdown">
-                    <button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pricing Plan
-                    </button>
-                    <ul class="dropdown-menu animated fadeIn" role="menu" aria-labelledby="dLabel">
-                        <li class="animated lightSpeedIn"><a href="#">1 month membership ($150)</a></li>
-                        <li class="animated lightSpeedIn"><a href="#">3 month membership ($350)</a></li>
-                        <li class="animated lightSpeedIn"><a href="#">1 year membership ($1000)</a></li>
-                        <li class="animated lightSpeedIn"><a href="#">Free trial class</a></li>
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#link" class="dropdown-toggle" data-toggle="dropdown">Real Estate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="search_results.html">Search Results</a></li>
+                        <li><a href="item_page.html">Item Page</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
-                </div>
-                <div class="checkbox-holder text-left">
-                    <div class="checkbox">
-                        <input type="checkbox" value="None" id="squaredOne" name="check" />
-                        <label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-submit">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-<footer>
+                </li>
+                <li class="dropdown">
+                    <a href="#link" class="dropdown-toggle" data-toggle="dropdown">Agents <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">All Agents</a></li>
+                        <li><a href="team_member.html">Agent Profile</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#link" class="dropdown-toggle" data-toggle="dropdown">Corporate <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact 1</a></li>
+                        <li><a href="contact_2.html">Contact 2</a></li>
+                        <li><a href="login.html">Login/Signup</a></li>
+                    </ul>
+                </li>
+            </ul><!-- /.navbar-nav -->
+        </div><!-- /.collapse -->
+    </div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<!-- hero -->
+<section class="wrapper-lg bg-custom-home">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 text-center-mobile">
-                <h3 class="white">Reserve a Free Trial Class!</h3>
-                <h5 class="light regular light-white">Shape your body and improve your health.</h5>
-                <a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
-            </div>
-            <div class="col-sm-6 text-center-mobile">
-                <h3 class="white">Opening Hours <span class="open-blink"></span></h3>
-                <div class="row opening-hours">
-                    <div class="col-sm-6 text-center-mobile">
-                        <h5 class="light-white light">Mon - Fri</h5>
-                        <h3 class="regular white">9:00 - 22:00</h3>
+            <div class="col-sm-12">
+                <div class="widget padding-lg bg-dark">
+                    <h1 class="heading-lg text-center text-light">Buy, Sell, or Rent Properties</h1>
+                    <br class="spacer-lg">
+                    <form action="" class="form-inline">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="">Search:</label>
+                                <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary">
+                                    <optgroup label="Personal:">
+                                        <option>Apartment</option>
+                                        <option>Condo</option>
+                                        <option>Villa</option>
+                                    </optgroup>
+                                    <optgroup label="Business:">
+                                        <option>Office</option>
+                                        <option>Warehouse</option>
+                                        <option>Studio</option>
+                                    </optgroup>
+                                </select>
+                            </div><!-- /.col -->
+                            <div class="col-md-2">
+                                <label for="">Status:</label>
+                                <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary">
+                                    <optgroup label="Status:">
+                                        <option>Buy</option>
+                                        <option>Sale</option>
+                                        <option>Rent</option>
+                                    </optgroup>
+                                </select>
+                            </div><!-- /.col -->
+                            <div class="col-md-3">
+                                <label for="">Location:</label>
+                                <select class="form-control selectpicker show-tick" title='Choose One' data-live-search="true" data-style="btn-primary">
+                                    <optgroup label="Location:">
+                                        <option>Dubai</option>
+                                        <option>Stockholm</option>
+                                        <option>Changai</option>
+                                        <option>Paris</option>
+                                    </optgroup>
+                                </select>
+                            </div><!-- /.col -->
+                            <div class="col-md-2">
+                                <label for="">Price:</label>
+                                <select class="form-control selectpicker show-tick" title='Choose One' data-style="btn-primary">
+                                    <optgroup label="Price:">
+                                        <option>Up to $5.000</option>
+                                        <option>Up to $10.000</option>
+                                        <option>Up to $20.000</option>
+                                    </optgroup>
+                                </select>
+                            </div><!-- /.col -->
+                            <div class="col-md-2">
+                                <label for="">Ready?</label>
+                                <button class="btn btn-primary btn-block">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- /.widget -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+<!-- /hero -->
+
+<section class="wrapper-md">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2><i class="fa fa-trophy text-primary"></i> We are offering <span class="text-muted">the best real estate</span> deals</h2>
+                <p class="lead">We pride ourselves on taking care of our customers. Between our detailed theme documentation, screencasts tand knowledgebase you’re sure to get up and running in no time.</p>
+                <p><a href="#link" class="btn btn-lg btn-primary">Learn More »</a></p>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section class="wrapper-md bg-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
                     </div>
-                    <div class="col-sm-6 text-center-mobile">
-                        <h5 class="light-white light">Sat - Sun</h5>
-                        <h3 class="regular white">10:00 - 18:00</h3>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
                     </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-small.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-md-6">
+
+                <!-- Carousel -->
+                <div id="my-carousel" class="carousel slide no-margin-bottom">
+                    <!-- indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#my-carousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- carousel -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="assets/img/wallpaper.jpg" alt="1200x500" >
+                            <div class="carousel-caption visible-lg">
+                                <h1>Bootstrap Framework Overhauled<br> Meet the new sexy</h1>
+                                <p class="lead">Beautifull Bootstrap skin with overhauled components.</p><br>
+                            </div>
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img class="img-responsive" src="assets/img/wallpaper.jpg" alt="1200x500" >
+                            <div class="carousel-caption visible-lg">
+                                <h1>We help you being awesome at what you really do</h1>
+                                <p class="lead">Providing the best service so you can concentrate on your thing</p>
+                            </div>
+                        </div><!-- /.item -->
+                    </div><!-- /.carousel-inner -->
+                <!-- Controls -->
+                    <a class="left carousel-control" href="#my-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#my-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div><!-- /.carousel -->
+
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section class="wrapper-md bg-primary">
+    <div class="container">
+        <h2 class="text-center headline">Featured This Week</h2>
+        <br class="spacer-lg">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail text-default">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-large.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3 heading-default">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail text-default">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-large.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3 heading-default">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail text-default">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-large.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3 heading-default">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail text-default">
+                    <div class="overlay-container">
+                        <img src="assets/img/item-large.jpg">
+                        <div class="overlay-content">
+                            <h3 class="h4 headline">Great Deal</h3>
+                            <p>So you know you're getting a top quality property from an experienced team.</p>
+                        </div><!-- /.overlay-content -->
+                    </div><!-- /.overlay-container -->
+                    <div class="thumbnail-meta">
+                        <p><i class="fa fa-fw fa-home"></i> 1199 Pacific Hwy #110</p>
+                        <p><i class="fa fa-fw fa-map-marker"></i> San Diego, CA 92101</p>
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-info-circle"></i> 1460 Ft | 2 Bed | 1,5 Bath | 2 Garage
+                    </div>
+                    <div class="thumbnail-meta">
+                        <i class="fa fa-fw fa-dollar"></i> <span class="h3 heading-default">350.000</span> <a href="#link" class="btn btn-link pull-right">View <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div><!-- /.thumbnail -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section class="wrapper-md">
+    <div class="container">
+        <h2 class="text-center">The Southern Graphikaria Real Estate Market Is About To Skyrocket</h2>
+        <p class="text-center lead">Very affordable 2 bedroom 2 bathroom beachfront homes.</p>
+        <br class="spacer-lg">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="widget padding-md bg-primary">
+                    <h2><i class="fa fa-list"></i> Listing</h2>
+                    <p class="lead">We have already sold more than 5,000 Homes and we are still going at very good pace. </p>
                 </div>
-            </div>
-        </div>
-        <div class="row bottom-footer text-center-mobile">
-            <div class="col-sm-8">
-                <p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
-            </div>
-            <div class="col-sm-4 text-right text-center-mobile">
-                <ul class="social-footer">
-                    <li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Holder for mobile navigation -->
-<div class="mobile-nav">
-    <ul>
-    </ul>
-    <a href="#" class="close-link"><i class="arrow_up"></i></a>
-</div>
-<!-- Scripts -->
-%{--<script src="js/jquery-1.11.1.min.js"></script>--}%
-%{--<script src="js/owl.carousel.min.js"></script>--}%
-%{--<script src="js/bootstrap.min.js"></script>--}%
-%{--<script src="js/wow.min.js"></script>--}%
-%{--<script src="js/typewriter.js"></script>--}%
-%{--<script src="js/jquery.onepagenav.js"></script>--}%
-%{--<script src="js/main.js"></script>--}%
+            </div><!-- /.col -->
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="widget padding-md bg-info">
+                    <h2><i class="fa fa-flag"></i> Advertise</h2>
+                    <p class="lead">We have already sold more than 5,000 Homes and we are still going at very good pace. </p>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="widget padding-md bg-primary">
+                    <h2><i class="fa fa-question-circle"></i> Consulting</h2>
+                    <p class="lead">We have already sold more than 5,000 Homes and we are still going at very good pace. </p>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
 
-<script src="${resource(dir: 'js/theme', file: "jquery-1.11.1.min.js")}"></script>
-<script src="${resource(dir: 'js/theme', file: "owl.carousel.min.js")}"></script>
-<script src="${resource(dir: 'js/theme', file: "wow.min.js")}"></script>
-<script src="${resource(dir: 'js/theme', file: "typewriter.js")}"></script>
-<script src="${resource(dir: 'js/theme', file: "jquery.onepagenav.js")}"></script>
-<script src="${resource(dir: 'js/theme', file: "main.js")}"></script>
+<!-- Footer -->
+<footer class="footer-container">
+    <section class="footer-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h3>Footer Component</h3>
+                    <p>Choose from our favourite tags:</p>
+                    <ul class="tags">
+                        <li><a href="#link">design</a></li>
+                        <li><a href="#link">layout</a></li>
+                        <li><a href="#link">stack</a></li>
+                        <li><a href="#link">PSD</a></li>
+                        <li><a href="#link">bootstrap</a></li>
+                        <li><a href="#link">menu</a></li>
+                        <li><a href="#link">type</a></li>
+                        <li><a href="#link">paper</a></li>
+                        <li><a href="#link">press</a></li>
+                    </ul>
+                </div><!-- /.col -->
+                <div class="col-sm-6 col-md-3">
+                    <h3>Image Stream List</h3>
+                    <p>View our latest stills in Flicker:</p>
+                    <ul class="img-stream">
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                        <li><a href="#link"><img class="media-object" data-src="holder.js/55x55" alt="img"></a></li>
+                    </ul>
+                </div><!-- /.col -->
+                <div class="col-sm-6 col-md-3">
+                    <h3>Hyperlinks List</h3>
+                    <p>Contact us whenever you want:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-right"></i> <a href="#link">9am-6pm ET Mon-Fri</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="#link">US (877) 977-8732</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="#link">International +1 646 490 1679</a></li>
+                    </ul>
+                </div><!-- /.col -->
+                <div class="col-sm-6 col-md-3">
+                    <h3>Social Media List</h3>
+                    <p>Stick to the social media hype:</p>
+                    <ul class="social-networks">
+                        <li><a class="btn btn-twitter" href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
+                        <li><a class="btn btn-facebook" href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+                        <li><a class="btn btn-google-plus" href="#"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                        <li><a class="btn btn-pinterest" href="#"><i class="fa fa-fw fa-pinterest"></i></a></li>
+                    </ul>
+                    <p>We are friendly. Give us a ding!</p>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.wrapper-sm -->
+    <section class="footer-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="no-margin-bottom">All Rights Reserved ® Designed by <a href="http://twitter.com/graphikaria" target="_blank">@Graphikaria</a></p>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.footer-secondary -->
+</footer><!-- /.footer-container --> <!-- End of footer -->
+
+<!-- last but not least the javascript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+%{--<script>window.jQuery || document.write('<script src="assets/js/jquery-1.8.3.min.js"><\/script>')</script>--}%
+%{--<script src="assets/js/bootstrap.min.js"></script>--}%
+%{--<script src="assets/js/bootstrap-select.min.js"></script>--}%
+
+<script src="assets/js/holder.js"></script>
+
+
 <script src="${resource(dir: 'js/theme', file: "bootstrap.min.js")}"></script>
+<script src="${resource(dir: 'js/theme', file: "bootstrap-select.min.js")}"></script>
+<script src="${resource(dir: 'js/theme', file: "jquery-1.8.3.min.js")}"></script>
 
+<script>
+    $(document).ready(function(){
+        $('.selectpicker').selectpicker();
+    });
+</script>
 
-
+<script   src="https://code.jquery.com/jquery-2.0.0.min.js"   integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw="   crossorigin="anonymous"></script>
 </body>
-
 </html>

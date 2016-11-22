@@ -216,14 +216,14 @@
         %{--<label class="checkbox-inline"><g:checkBox name="gym" value="${houseCO?.gym}" checked="${houseCO?.gym=='true'}"/>Gym</label>--}%
 
 
-    %{--<label class="checkbox-inline">< name="lift"/>Lift</label>--}%
-    %{--<label class="checkbox-inline"><checkBox name="waterStorage"/>Water Storage</label>--}%
-    %{--<label class="checkbox-inline"><checkBox name="atm"/>ATM</label><br>--}%
-    %{--<label class="checkbox-inline"><checkBox name="conferenceRoom" />Conference Room</label>--}%
-    %{--<label class="checkbox-inline"><checkBox name="gym" />Gym</label>--}%
+    <label class="checkbox-inline"><g:checkBox name="lift"/>Lift</label>
+    <label class="checkbox-inline"><g:checkBox name="waterStorage"/>Water Storage</label>
+    <label class="checkbox-inline"><g:checkBox name="atm"/>ATM</label><br>
+    <label class="checkbox-inline"><g:checkBox name="conferenceRoom" />Conference Room</label>
+    <label class="checkbox-inline"><g:checkBox name="gym" />Gym</label>
 
-        <g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"
-                  multiple="true" value="${houseCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>
+        %{--<g:select name="amenities" from="${project.propertyApp.enums.Enums.Amenities.amenitiesList()}"--}%
+                  %{--multiple="true" value="${houseCO?.amenities}" noSelection="['': 'Choose amenities']"></g:select>--}%
 
     </div>
 </div>

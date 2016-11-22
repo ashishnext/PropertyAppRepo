@@ -1,18 +1,17 @@
 package project.propertyApp.property
 
 class Amenities {
-    String lift, waterStorage, atm, conferenceRoom, gym
+    Boolean lift = false
+    Boolean waterStorage = false
+    Boolean atm = false
+    Boolean conferenceRoom = false
+    Boolean gym = false
 
+   // static belongsTo =[property: Property]
 
-    static belongsTo = [property: Property]
+    static belongsTo = Property
 
   //  static transients = ['lift', 'waterStorage', 'atm', 'conferenceRoom', 'gym']
     static constraints = {
-//
-//        lift nullable: true, bindable: true
-//        waterStorage nullable: true, bindable: true
-//        atm nullable: true, bindable: true
-//        conferenceRoom nullable: true, bindable: true
-//        gym nullable: true, bindable: true
     }
 }

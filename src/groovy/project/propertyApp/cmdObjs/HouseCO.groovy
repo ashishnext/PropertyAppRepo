@@ -20,12 +20,13 @@ class HouseCO {
     String phoneNum
     Enums.Possession possession
     Enums.HouseType houseType
-    String amenities
-//    Boolean lift
-//    Boolean waterStorage
-//    Boolean atm
-//    Boolean conferenceRoom
-//    Boolean gym
+  //  String amenities
+
+    Boolean lift
+    Boolean waterStorage
+    Boolean atm
+    Boolean conferenceRoom
+    Boolean gym
 
 
     static constraints= {

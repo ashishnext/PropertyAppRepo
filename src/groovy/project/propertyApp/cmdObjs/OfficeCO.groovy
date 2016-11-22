@@ -18,7 +18,12 @@ class OfficeCO {
     String phoneNum
     Enums.Possession possession
     Enums.OfficeType officeType
-    String amenities
+   // String amenities
+    Boolean lift
+    Boolean waterStorage
+    Boolean atm
+    Boolean conferenceRoom
+    Boolean gym
 
   //  Boolean lift, waterStorage, atm, conferenceRoom, gym
 

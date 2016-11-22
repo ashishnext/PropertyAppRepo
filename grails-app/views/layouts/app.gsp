@@ -47,15 +47,15 @@
             <ul class="nav navbar-nav navbar-right main-nav">
                 <li><a href="${createLink(controller: "landing", action: "home")}" class="btn btn-info">Home</a></li>
                 <li><a href="${createLink(controller: "property", action: "postProperty")}" class="btn btn-info">Post Property</a></li>
+
+                <sec:ifNotLoggedIn>
                 <li><a href="${createLink(controller: "landing", action: "login")}" class="btn btn-info">Login / SignUp</a></li>
+                </sec:ifNotLoggedIn>
                 <li>          <div class="dropdown">
                     <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
-
+                        <sec:ifLoggedIn>
                         <img style="height:50px;width:50px;"src="${createLink(controller: "landing", action: "renderImage")}"/>
 
-
-
-                        <sec:ifLoggedIn>
                             ${project.propertyApp.person.Person.get(sec.loggedInUserInfo(field: 'id')).name}<br>
                             %{--${project.propertyApp.person.Person.get(sec.loggedInUserInfo(field: 'id')).username}--}%
 

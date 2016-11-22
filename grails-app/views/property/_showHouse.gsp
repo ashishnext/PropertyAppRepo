@@ -38,7 +38,12 @@
                                     class="1 blue">Possession -</span> <span>${hl.possession}</span></p>
 
                             <p class="bold"><span
-                                    class="1 blue">Amenities -</span> <span>${hl.amenities}</span></p>
+                                    class="1 blue">Amenities -</span> <span>${hl.amenities?.lift ? 'Lift' : ''}</span>&nbsp;
+                                <span>${hl.amenities?.waterStorage ? 'Water Storage' : ''}</span> &nbsp;
+                                <span>${hl.amenities?.conferenceRoom ? 'Conference Room' : ''}</span> &nbsp;
+                                <span>${hl.amenities?.atm ? 'ATM' : ''}</span> &nbsp;
+                                <span>${hl.amenities?.gym ? 'Gym' : ''}</span> &nbsp;
+                            </p>
 
                             <p class="bold"><span
                                     class="1 blue">Posted By -</span> <span>${hl.person.name}</span> &nbsp; &nbsp; <span

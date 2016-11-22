@@ -9,12 +9,13 @@ class House extends Property{
     Enums.HouseType houseType
 
 
+
     static constraints = {
 
     }
 
     static List<House> newHousePosted() {
-        def c=House.createCriteria()
+        def c = House.createCriteria()
         List<House> results=c.list() {
             order("dateCreated", "desc")
         }

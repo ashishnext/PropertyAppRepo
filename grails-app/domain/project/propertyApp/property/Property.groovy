@@ -15,9 +15,12 @@ class Property {
     String photoLocation
     String phoneNum
     Enums.Possession possession
-    String amenities
+    Amenities amenities
 
-   // static  hasOne = [amenities: Amenities]
+   // static hasOne = [amenities: Amenities]
+
+
+    //String amenities
 
     static belongsTo = [person: Person]
 
